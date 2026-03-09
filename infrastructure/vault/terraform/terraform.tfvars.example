@@ -1,0 +1,21 @@
+# ============================================================================
+# Example Terraform Variables File
+# ============================================================================
+# Copy this file to terraform.tfvars and update with your actual values
+# cp terraform.tfvars.example terraform.tfvars
+# ============================================================================
+
+# Vault Configuration
+vault_addr  = "http://localhost:8200"
+vault_token = "root"
+
+# PostgreSQL Configuration
+postgres_host     = "postgres"
+postgres_port     = 5432
+postgres_db       = "employee_db"
+postgres_user     = "vault"
+postgres_password = "vault-password"
+
+# IBM Verify Configuration (to be provided by instructor)
+ibm_verify_tenant   = "your-tenant"
+ibm_verify_oidc_url = "https://your-tenant.verify.ibm.com/oidc/endpoint/default"

@@ -1,0 +1,2369 @@
+{
+  "data": {
+    "edges": [
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "database_tool",
+            "id": "database_tool-2grIS",
+            "name": "component_as_tool",
+            "output_types": [
+              "Tool"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "tools",
+            "id": "Agent-4qDU3",
+            "inputTypes": [
+              "Tool"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__database_tool-2grIS{œdataTypeœ:œdatabase_toolœ,œidœ:œdatabase_tool-2grISœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}-Agent-4qDU3{œfieldNameœ:œtoolsœ,œidœ:œAgent-4qDU3œ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "database_tool-2grIS",
+        "sourceHandle": "{œdataTypeœ:œdatabase_toolœ,œidœ:œdatabase_tool-2grISœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}",
+        "target": "Agent-4qDU3",
+        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œAgent-4qDU3œ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "Agent",
+            "id": "Agent-4qDU3",
+            "name": "response",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_value",
+            "id": "ChatOutput-LH3IQ",
+            "inputTypes": [
+              "Data",
+              "DataFrame",
+              "Message"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__Agent-4qDU3{œdataTypeœ:œAgentœ,œidœ:œAgent-4qDU3œ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}-ChatOutput-LH3IQ{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-LH3IQœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "Agent-4qDU3",
+        "sourceHandle": "{œdataTypeœ:œAgentœ,œidœ:œAgent-4qDU3œ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "ChatOutput-LH3IQ",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-LH3IQœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "ChatInput",
+            "id": "ChatInput-eub7b",
+            "name": "message",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_value",
+            "id": "Agent-4qDU3",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__ChatInput-eub7b{œdataTypeœ:œChatInputœ,œidœ:œChatInput-eub7bœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-Agent-4qDU3{œfieldNameœ:œinput_valueœ,œidœ:œAgent-4qDU3œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "ChatInput-eub7b",
+        "sourceHandle": "{œdataTypeœ:œChatInputœ,œidœ:œChatInput-eub7bœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "Agent-4qDU3",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œAgent-4qDU3œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "vault_credentials_tool",
+            "id": "vault_credentials_tool-KCi9s",
+            "name": "component_as_tool",
+            "output_types": [
+              "Tool"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "tools",
+            "id": "Agent-4qDU3",
+            "inputTypes": [
+              "Tool"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__vault_credentials_tool-KCi9s{œdataTypeœ:œvault_credentials_toolœ,œidœ:œvault_credentials_tool-KCi9sœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}-Agent-4qDU3{œfieldNameœ:œtoolsœ,œidœ:œAgent-4qDU3œ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "vault_credentials_tool-KCi9s",
+        "sourceHandle": "{œdataTypeœ:œvault_credentials_toolœ,œidœ:œvault_credentials_tool-KCi9sœ,œnameœ:œcomponent_as_toolœ,œoutput_typesœ:[œToolœ]}",
+        "target": "Agent-4qDU3",
+        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œAgent-4qDU3œ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "id": "ChatInput-eub7b",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Get chat inputs from the Playground.",
+            "display_name": "Chat Input",
+            "documentation": "https://docs.langflow.org/chat-input-and-output",
+            "edited": false,
+            "field_order": [
+              "input_value",
+              "should_store_message",
+              "sender",
+              "sender_name",
+              "session_id",
+              "context_id",
+              "files"
+            ],
+            "frozen": false,
+            "icon": "MessagesSquare",
+            "legacy": false,
+            "lf_version": "1.7.3",
+            "metadata": {
+              "code_hash": "7a26c54d89ed",
+              "dependencies": {
+                "dependencies": [
+                  {
+                    "name": "lfx",
+                    "version": "0.2.2"
+                  }
+                ],
+                "total_dependencies": 1
+              },
+              "module": "custom_components.chat_input"
+            },
+            "minimized": true,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Chat Message",
+                "group_outputs": false,
+                "hidden": null,
+                "loop_types": null,
+                "method": "message_response",
+                "name": "message",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from lfx.base.data.utils import IMG_FILE_TYPES, TEXT_FILE_TYPES\nfrom lfx.base.io.chat import ChatComponent\nfrom lfx.inputs.inputs import BoolInput\nfrom lfx.io import (\n    DropdownInput,\n    FileInput,\n    MessageTextInput,\n    MultilineInput,\n    Output,\n)\nfrom lfx.schema.message import Message\nfrom lfx.utils.constants import (\n    MESSAGE_SENDER_AI,\n    MESSAGE_SENDER_NAME_USER,\n    MESSAGE_SENDER_USER,\n)\n\n\nclass ChatInput(ChatComponent):\n    display_name = \"Chat Input\"\n    description = \"Get chat inputs from the Playground.\"\n    documentation: str = \"https://docs.langflow.org/chat-input-and-output\"\n    icon = \"MessagesSquare\"\n    name = \"ChatInput\"\n    minimized = True\n\n    inputs = [\n        MultilineInput(\n            name=\"input_value\",\n            display_name=\"Input Text\",\n            value=\"\",\n            info=\"Message to be passed as input.\",\n            input_types=[],\n        ),\n        BoolInput(\n            name=\"should_store_message\",\n            display_name=\"Store Messages\",\n            info=\"Store the message in the history.\",\n            value=True,\n            advanced=True,\n        ),\n        DropdownInput(\n            name=\"sender\",\n            display_name=\"Sender Type\",\n            options=[MESSAGE_SENDER_AI, MESSAGE_SENDER_USER],\n            value=MESSAGE_SENDER_USER,\n            info=\"Type of sender.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"sender_name\",\n            display_name=\"Sender Name\",\n            info=\"Name of the sender.\",\n            value=MESSAGE_SENDER_NAME_USER,\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"session_id\",\n            display_name=\"Session ID\",\n            info=\"The session ID of the chat. If empty, the current session ID parameter will be used.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"context_id\",\n            display_name=\"Context ID\",\n            info=\"The context ID of the chat. Adds an extra layer to the local memory.\",\n            value=\"\",\n            advanced=True,\n        ),\n        FileInput(\n            name=\"files\",\n            display_name=\"Files\",\n            file_types=TEXT_FILE_TYPES + IMG_FILE_TYPES,\n            info=\"Files to be sent with the message.\",\n            advanced=True,\n            is_list=True,\n            temp_file=True,\n        ),\n    ]\n    outputs = [\n        Output(display_name=\"Chat Message\", name=\"message\", method=\"message_response\"),\n    ]\n\n    async def message_response(self) -> Message:\n        # Ensure files is a list and filter out empty/None values\n        files = self.files if self.files else []\n        if files and not isinstance(files, list):\n            files = [files]\n        # Filter out None/empty values\n        files = [f for f in files if f is not None and f != \"\"]\n\n        session_id = self.session_id or self.graph.session_id or \"\"\n        message = await Message.create(\n            text=self.input_value,\n            sender=self.sender,\n            sender_name=self.sender_name,\n            session_id=session_id,\n            context_id=self.context_id,\n            files=files,\n        )\n        if session_id and isinstance(message, Message) and self.should_store_message:\n            stored_message = await self.send_message(\n                message,\n            )\n            self.message.value = stored_message\n            message = stored_message\n\n        self.status = message\n        return message\n"
+              },
+              "context_id": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Context ID",
+                "dynamic": false,
+                "info": "The context ID of the chat. Adds an extra layer to the local memory.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "context_id",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              },
+              "files": {
+                "_input_type": "FileInput",
+                "advanced": true,
+                "display_name": "Files",
+                "dynamic": false,
+                "fileTypes": [
+                  "csv",
+                  "json",
+                  "pdf",
+                  "txt",
+                  "md",
+                  "mdx",
+                  "yaml",
+                  "yml",
+                  "xml",
+                  "html",
+                  "htm",
+                  "docx",
+                  "py",
+                  "sh",
+                  "sql",
+                  "js",
+                  "ts",
+                  "tsx",
+                  "jpg",
+                  "jpeg",
+                  "png",
+                  "bmp",
+                  "image"
+                ],
+                "file_path": "",
+                "info": "Files to be sent with the message.",
+                "list": true,
+                "list_add_label": "Add More",
+                "name": "files",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "temp_file": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "file",
+                "value": ""
+              },
+              "input_value": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "ai_enabled": false,
+                "copy_field": false,
+                "display_name": "Input Text",
+                "dynamic": false,
+                "info": "Message to be passed as input.",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "input_value",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              },
+              "sender": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Sender Type",
+                "dynamic": false,
+                "external_options": {},
+                "info": "Type of sender.",
+                "name": "sender",
+                "options": [
+                  "Machine",
+                  "User"
+                ],
+                "options_metadata": [],
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "str",
+                "value": "User"
+              },
+              "sender_name": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Sender Name",
+                "dynamic": false,
+                "info": "Name of the sender.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "sender_name",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": "User"
+              },
+              "session_id": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Session ID",
+                "dynamic": false,
+                "info": "The session ID of the chat. If empty, the current session ID parameter will be used.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "session_id",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              },
+              "should_store_message": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Store Messages",
+                "dynamic": false,
+                "info": "Store the message in the history.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "should_store_message",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "bool",
+                "value": true
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": false,
+          "type": "ChatInput"
+        },
+        "dragging": false,
+        "id": "ChatInput-eub7b",
+        "measured": {
+          "height": 48,
+          "width": 192
+        },
+        "position": {
+          "x": 418.43271199126355,
+          "y": -337.67635316506085
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "ChatOutput-LH3IQ",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Display a chat message in the Playground.",
+            "display_name": "Chat Output",
+            "documentation": "https://docs.langflow.org/chat-input-and-output",
+            "edited": false,
+            "field_order": [
+              "input_value",
+              "should_store_message",
+              "sender",
+              "sender_name",
+              "session_id",
+              "context_id",
+              "data_template",
+              "clean_data"
+            ],
+            "frozen": false,
+            "icon": "MessagesSquare",
+            "legacy": false,
+            "lf_version": "1.7.3",
+            "metadata": {
+              "code_hash": "8c87e536cca4",
+              "dependencies": {
+                "dependencies": [
+                  {
+                    "name": "orjson",
+                    "version": "3.10.15"
+                  },
+                  {
+                    "name": "fastapi",
+                    "version": "0.128.0"
+                  },
+                  {
+                    "name": "lfx",
+                    "version": "0.2.2"
+                  }
+                ],
+                "total_dependencies": 3
+              },
+              "module": "lfx.components.input_output.chat_output.ChatOutput"
+            },
+            "minimized": true,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Output Message",
+                "group_outputs": false,
+                "method": "message_response",
+                "name": "message",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "clean_data": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Basic Clean Data",
+                "dynamic": false,
+                "info": "Whether to clean data before converting to string.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "clean_data",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "bool",
+                "value": true
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from collections.abc import Generator\nfrom typing import Any\n\nimport orjson\nfrom fastapi.encoders import jsonable_encoder\n\nfrom lfx.base.io.chat import ChatComponent\nfrom lfx.helpers.data import safe_convert\nfrom lfx.inputs.inputs import BoolInput, DropdownInput, HandleInput, MessageTextInput\nfrom lfx.schema.data import Data\nfrom lfx.schema.dataframe import DataFrame\nfrom lfx.schema.message import Message\nfrom lfx.schema.properties import Source\nfrom lfx.template.field.base import Output\nfrom lfx.utils.constants import (\n    MESSAGE_SENDER_AI,\n    MESSAGE_SENDER_NAME_AI,\n    MESSAGE_SENDER_USER,\n)\n\n\nclass ChatOutput(ChatComponent):\n    display_name = \"Chat Output\"\n    description = \"Display a chat message in the Playground.\"\n    documentation: str = \"https://docs.langflow.org/chat-input-and-output\"\n    icon = \"MessagesSquare\"\n    name = \"ChatOutput\"\n    minimized = True\n\n    inputs = [\n        HandleInput(\n            name=\"input_value\",\n            display_name=\"Inputs\",\n            info=\"Message to be passed as output.\",\n            input_types=[\"Data\", \"DataFrame\", \"Message\"],\n            required=True,\n        ),\n        BoolInput(\n            name=\"should_store_message\",\n            display_name=\"Store Messages\",\n            info=\"Store the message in the history.\",\n            value=True,\n            advanced=True,\n        ),\n        DropdownInput(\n            name=\"sender\",\n            display_name=\"Sender Type\",\n            options=[MESSAGE_SENDER_AI, MESSAGE_SENDER_USER],\n            value=MESSAGE_SENDER_AI,\n            advanced=True,\n            info=\"Type of sender.\",\n        ),\n        MessageTextInput(\n            name=\"sender_name\",\n            display_name=\"Sender Name\",\n            info=\"Name of the sender.\",\n            value=MESSAGE_SENDER_NAME_AI,\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"session_id\",\n            display_name=\"Session ID\",\n            info=\"The session ID of the chat. If empty, the current session ID parameter will be used.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"context_id\",\n            display_name=\"Context ID\",\n            info=\"The context ID of the chat. Adds an extra layer to the local memory.\",\n            value=\"\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"data_template\",\n            display_name=\"Data Template\",\n            value=\"{text}\",\n            advanced=True,\n            info=\"Template to convert Data to Text. If left empty, it will be dynamically set to the Data's text key.\",\n        ),\n        BoolInput(\n            name=\"clean_data\",\n            display_name=\"Basic Clean Data\",\n            value=True,\n            advanced=True,\n            info=\"Whether to clean data before converting to string.\",\n        ),\n    ]\n    outputs = [\n        Output(\n            display_name=\"Output Message\",\n            name=\"message\",\n            method=\"message_response\",\n        ),\n    ]\n\n    def _build_source(self, id_: str | None, display_name: str | None, source: str | None) -> Source:\n        source_dict = {}\n        if id_:\n            source_dict[\"id\"] = id_\n        if display_name:\n            source_dict[\"display_name\"] = display_name\n        if source:\n            # Handle case where source is a ChatOpenAI object\n            if hasattr(source, \"model_name\"):\n                source_dict[\"source\"] = source.model_name\n            elif hasattr(source, \"model\"):\n                source_dict[\"source\"] = str(source.model)\n            else:\n                source_dict[\"source\"] = str(source)\n        return Source(**source_dict)\n\n    async def message_response(self) -> Message:\n        # First convert the input to string if needed\n        text = self.convert_to_string()\n\n        # Get source properties\n        source, _, display_name, source_id = self.get_properties_from_source_component()\n\n        # Create or use existing Message object\n        if isinstance(self.input_value, Message) and not self.is_connected_to_chat_input():\n            message = self.input_value\n            # Update message properties\n            message.text = text\n            # Preserve existing session_id from the incoming message if it exists\n            existing_session_id = message.session_id\n        else:\n            message = Message(text=text)\n            existing_session_id = None\n\n        # Set message properties\n        message.sender = self.sender\n        message.sender_name = self.sender_name\n        # Preserve session_id from incoming message, or use component/graph session_id\n        message.session_id = (\n            self.session_id or existing_session_id or (self.graph.session_id if hasattr(self, \"graph\") else None) or \"\"\n        )\n        message.context_id = self.context_id\n        message.flow_id = self.graph.flow_id if hasattr(self, \"graph\") else None\n        message.properties.source = self._build_source(source_id, display_name, source)\n\n        # Store message if needed\n        if message.session_id and self.should_store_message:\n            stored_message = await self.send_message(message)\n            self.message.value = stored_message\n            message = stored_message\n\n        self.status = message\n        return message\n\n    def _serialize_data(self, data: Data) -> str:\n        \"\"\"Serialize Data object to JSON string.\"\"\"\n        # Convert data.data to JSON-serializable format\n        serializable_data = jsonable_encoder(data.data)\n        # Serialize with orjson, enabling pretty printing with indentation\n        json_bytes = orjson.dumps(serializable_data, option=orjson.OPT_INDENT_2)\n        # Convert bytes to string and wrap in Markdown code blocks\n        return \"```json\\n\" + json_bytes.decode(\"utf-8\") + \"\\n```\"\n\n    def _validate_input(self) -> None:\n        \"\"\"Validate the input data and raise ValueError if invalid.\"\"\"\n        if self.input_value is None:\n            msg = \"Input data cannot be None\"\n            raise ValueError(msg)\n        if isinstance(self.input_value, list) and not all(\n            isinstance(item, Message | Data | DataFrame | str) for item in self.input_value\n        ):\n            invalid_types = [\n                type(item).__name__\n                for item in self.input_value\n                if not isinstance(item, Message | Data | DataFrame | str)\n            ]\n            msg = f\"Expected Data or DataFrame or Message or str, got {invalid_types}\"\n            raise TypeError(msg)\n        if not isinstance(\n            self.input_value,\n            Message | Data | DataFrame | str | list | Generator | type(None),\n        ):\n            type_name = type(self.input_value).__name__\n            msg = f\"Expected Data or DataFrame or Message or str, Generator or None, got {type_name}\"\n            raise TypeError(msg)\n\n    def convert_to_string(self) -> str | Generator[Any, None, None]:\n        \"\"\"Convert input data to string with proper error handling.\"\"\"\n        self._validate_input()\n        if isinstance(self.input_value, list):\n            clean_data: bool = getattr(self, \"clean_data\", False)\n            return \"\\n\".join([safe_convert(item, clean_data=clean_data) for item in self.input_value])\n        if isinstance(self.input_value, Generator):\n            return self.input_value\n        return safe_convert(self.input_value)\n"
+              },
+              "context_id": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Context ID",
+                "dynamic": false,
+                "info": "The context ID of the chat. Adds an extra layer to the local memory.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "context_id",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              },
+              "data_template": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Data Template",
+                "dynamic": false,
+                "info": "Template to convert Data to Text. If left empty, it will be dynamically set to the Data's text key.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "data_template",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": "{text}"
+              },
+              "input_value": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Inputs",
+                "dynamic": false,
+                "info": "Message to be passed as output.",
+                "input_types": [
+                  "Data",
+                  "DataFrame",
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "input_value",
+                "override_skip": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "other",
+                "value": ""
+              },
+              "sender": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Sender Type",
+                "dynamic": false,
+                "external_options": {},
+                "info": "Type of sender.",
+                "name": "sender",
+                "options": [
+                  "Machine",
+                  "User"
+                ],
+                "options_metadata": [],
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "str",
+                "value": "Machine"
+              },
+              "sender_name": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Sender Name",
+                "dynamic": false,
+                "info": "Name of the sender.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "sender_name",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": "AI"
+              },
+              "session_id": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Session ID",
+                "dynamic": false,
+                "info": "The session ID of the chat. If empty, the current session ID parameter will be used.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "session_id",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              },
+              "should_store_message": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Store Messages",
+                "dynamic": false,
+                "info": "Store the message in the history.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "should_store_message",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "bool",
+                "value": true
+              }
+            },
+            "tool_mode": false
+          },
+          "selected_output": "message",
+          "showNode": false,
+          "type": "ChatOutput"
+        },
+        "dragging": false,
+        "id": "ChatOutput-LH3IQ",
+        "measured": {
+          "height": 48,
+          "width": 192
+        },
+        "position": {
+          "x": 1718.6336938965817,
+          "y": -402.905908009815
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "Agent-4qDU3",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Define the agent's instructions, then enter a task to complete using tools.",
+            "display_name": "Agent",
+            "documentation": "https://docs.langflow.org/agents",
+            "edited": false,
+            "field_order": [
+              "agent_llm",
+              "api_key",
+              "base_url",
+              "project_id",
+              "max_output_tokens",
+              "max_tokens",
+              "model_kwargs",
+              "model_name",
+              "openai_api_base",
+              "api_key",
+              "temperature",
+              "seed",
+              "max_retries",
+              "timeout",
+              "system_prompt",
+              "context_id",
+              "n_messages",
+              "format_instructions",
+              "output_schema",
+              "tools",
+              "input_value",
+              "handle_parsing_errors",
+              "verbose",
+              "max_iterations",
+              "agent_description",
+              "add_current_date_tool"
+            ],
+            "frozen": false,
+            "icon": "bot",
+            "last_updated": "2026-03-09T03:33:31.121Z",
+            "legacy": false,
+            "lf_version": "1.7.3",
+            "metadata": {
+              "code_hash": "fba2d73636e5",
+              "dependencies": {
+                "dependencies": [
+                  {
+                    "name": "langchain_core",
+                    "version": "0.3.83"
+                  },
+                  {
+                    "name": "pydantic",
+                    "version": "2.11.10"
+                  },
+                  {
+                    "name": "lfx",
+                    "version": "0.2.2"
+                  }
+                ],
+                "total_dependencies": 3
+              },
+              "module": "lfx.components.models_and_agents.agent.AgentComponent"
+            },
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Response",
+                "group_outputs": false,
+                "hidden": null,
+                "loop_types": null,
+                "method": "message_response",
+                "name": "response",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_frontend_node_flow_id": {
+                "value": "6158c23c-7d05-49db-ba6e-0b3304f7df2a"
+              },
+              "_frontend_node_folder_id": {
+                "value": "7fbea425-5d9a-475e-9b60-8d994a2d5e60"
+              },
+              "_type": "Component",
+              "add_current_date_tool": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Current Date",
+                "dynamic": false,
+                "info": "If true, will add a tool to the agent that returns the current date.",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "add_current_date_tool",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "bool",
+                "value": true
+              },
+              "agent_description": {
+                "_input_type": "MultilineInput",
+                "advanced": true,
+                "ai_enabled": false,
+                "copy_field": false,
+                "display_name": "Agent Description [Deprecated]",
+                "dynamic": false,
+                "info": "The description of the agent. This is only used when in Tool Mode. Defaults to 'A helpful assistant with access to the following tools:' and tools are added dynamically. This feature is deprecated and will be removed in future versions.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "agent_description",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": "A helpful assistant with access to the following tools:"
+              },
+              "agent_llm": {
+                "_input_type": "DropdownInput",
+                "advanced": false,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Model Provider",
+                "dynamic": false,
+                "external_options": {
+                  "fields": {
+                    "data": {
+                      "node": {
+                        "display_name": "Connect other models",
+                        "icon": "CornerDownLeft",
+                        "name": "connect_other_models"
+                      }
+                    }
+                  }
+                },
+                "info": "The provider of the language model that the agent will use to generate responses.",
+                "input_types": [],
+                "name": "agent_llm",
+                "options": [
+                  "Anthropic",
+                  "Google Generative AI",
+                  "OpenAI",
+                  "IBM watsonx.ai",
+                  "Ollama"
+                ],
+                "options_metadata": [
+                  {
+                    "icon": "Anthropic"
+                  },
+                  {
+                    "icon": "GoogleGenerativeAI"
+                  },
+                  {
+                    "icon": "OpenAI"
+                  },
+                  {
+                    "icon": "WatsonxAI"
+                  },
+                  {
+                    "icon": "Ollama"
+                  }
+                ],
+                "override_skip": false,
+                "placeholder": "Awaiting model input.",
+                "real_time_refresh": true,
+                "refresh_button": false,
+                "required": false,
+                "selected_metadata": {
+                  "icon": "WatsonxAI"
+                },
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "str",
+                "value": "IBM watsonx.ai"
+              },
+              "api_key": {
+                "_input_type": "SecretStrInput",
+                "advanced": false,
+                "display_name": "Watsonx API Key",
+                "dynamic": false,
+                "info": "The API Key to use for the model.",
+                "input_types": [],
+                "load_from_db": false,
+                "name": "api_key",
+                "override_skip": false,
+                "password": true,
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              },
+              "base_url": {
+                "_input_type": "DropdownInput",
+                "advanced": false,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "watsonx API Endpoint",
+                "dynamic": false,
+                "external_options": {},
+                "info": "The base URL of the API.",
+                "input_types": [],
+                "name": "base_url",
+                "options": [
+                  "https://us-south.ml.cloud.ibm.com",
+                  "https://eu-de.ml.cloud.ibm.com",
+                  "https://eu-gb.ml.cloud.ibm.com",
+                  "https://au-syd.ml.cloud.ibm.com",
+                  "https://jp-tok.ml.cloud.ibm.com",
+                  "https://ca-tor.ml.cloud.ibm.com"
+                ],
+                "options_metadata": [],
+                "override_skip": false,
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "str",
+                "value": "https://us-south.ml.cloud.ibm.com"
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "input_types": [],
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "import json\nimport re\n\nfrom langchain_core.tools import StructuredTool, Tool\nfrom pydantic import ValidationError\n\nfrom lfx.base.agents.agent import LCToolsAgentComponent\nfrom lfx.base.agents.events import ExceptionWithMessageError\nfrom lfx.base.models.model_input_constants import (\n    ALL_PROVIDER_FIELDS,\n    MODEL_DYNAMIC_UPDATE_FIELDS,\n    MODEL_PROVIDERS_DICT,\n    MODEL_PROVIDERS_LIST,\n    MODELS_METADATA,\n)\nfrom lfx.base.models.model_utils import get_model_name\nfrom lfx.components.helpers import CurrentDateComponent\nfrom lfx.components.langchain_utilities.tool_calling import ToolCallingAgentComponent\nfrom lfx.components.models_and_agents.memory import MemoryComponent\nfrom lfx.custom.custom_component.component import get_component_toolkit\nfrom lfx.custom.utils import update_component_build_config\nfrom lfx.helpers.base_model import build_model_from_schema\nfrom lfx.inputs.inputs import BoolInput, SecretStrInput, StrInput\nfrom lfx.io import DropdownInput, IntInput, MessageTextInput, MultilineInput, Output, TableInput\nfrom lfx.log.logger import logger\nfrom lfx.schema.data import Data\nfrom lfx.schema.dotdict import dotdict\nfrom lfx.schema.message import Message\nfrom lfx.schema.table import EditMode\n\n\ndef set_advanced_true(component_input):\n    component_input.advanced = True\n    return component_input\n\n\nclass AgentComponent(ToolCallingAgentComponent):\n    display_name: str = \"Agent\"\n    description: str = \"Define the agent's instructions, then enter a task to complete using tools.\"\n    documentation: str = \"https://docs.langflow.org/agents\"\n    icon = \"bot\"\n    beta = False\n    name = \"Agent\"\n\n    memory_inputs = [set_advanced_true(component_input) for component_input in MemoryComponent().inputs]\n\n    # Filter out json_mode from OpenAI inputs since we handle structured output differently\n    if \"OpenAI\" in MODEL_PROVIDERS_DICT:\n        openai_inputs_filtered = [\n            input_field\n            for input_field in MODEL_PROVIDERS_DICT[\"OpenAI\"][\"inputs\"]\n            if not (hasattr(input_field, \"name\") and input_field.name == \"json_mode\")\n        ]\n    else:\n        openai_inputs_filtered = []\n\n    inputs = [\n        DropdownInput(\n            name=\"agent_llm\",\n            display_name=\"Model Provider\",\n            info=\"The provider of the language model that the agent will use to generate responses.\",\n            options=[*MODEL_PROVIDERS_LIST],\n            value=\"OpenAI\",\n            real_time_refresh=True,\n            refresh_button=False,\n            input_types=[],\n            options_metadata=[MODELS_METADATA[key] for key in MODEL_PROVIDERS_LIST if key in MODELS_METADATA],\n            external_options={\n                \"fields\": {\n                    \"data\": {\n                        \"node\": {\n                            \"name\": \"connect_other_models\",\n                            \"display_name\": \"Connect other models\",\n                            \"icon\": \"CornerDownLeft\",\n                        }\n                    }\n                },\n            },\n        ),\n        SecretStrInput(\n            name=\"api_key\",\n            display_name=\"API Key\",\n            info=\"The API key to use for the model.\",\n            required=True,\n        ),\n        StrInput(\n            name=\"base_url\",\n            display_name=\"Base URL\",\n            info=\"The base URL of the API.\",\n            required=True,\n            show=False,\n        ),\n        StrInput(\n            name=\"project_id\",\n            display_name=\"Project ID\",\n            info=\"The project ID of the model.\",\n            required=True,\n            show=False,\n        ),\n        IntInput(\n            name=\"max_output_tokens\",\n            display_name=\"Max Output Tokens\",\n            info=\"The maximum number of tokens to generate.\",\n            show=False,\n        ),\n        *openai_inputs_filtered,\n        MultilineInput(\n            name=\"system_prompt\",\n            display_name=\"Agent Instructions\",\n            info=\"System Prompt: Initial instructions and context provided to guide the agent's behavior.\",\n            value=\"You are a helpful assistant that can use tools to answer questions and perform tasks.\",\n            advanced=False,\n        ),\n        MessageTextInput(\n            name=\"context_id\",\n            display_name=\"Context ID\",\n            info=\"The context ID of the chat. Adds an extra layer to the local memory.\",\n            value=\"\",\n            advanced=True,\n        ),\n        IntInput(\n            name=\"n_messages\",\n            display_name=\"Number of Chat History Messages\",\n            value=100,\n            info=\"Number of chat history messages to retrieve.\",\n            advanced=True,\n            show=True,\n        ),\n        MultilineInput(\n            name=\"format_instructions\",\n            display_name=\"Output Format Instructions\",\n            info=\"Generic Template for structured output formatting. Valid only with Structured response.\",\n            value=(\n                \"You are an AI that extracts structured JSON objects from unstructured text. \"\n                \"Use a predefined schema with expected types (str, int, float, bool, dict). \"\n                \"Extract ALL relevant instances that match the schema - if multiple patterns exist, capture them all. \"\n                \"Fill missing or ambiguous values with defaults: null for missing values. \"\n                \"Remove exact duplicates but keep variations that have different field values. \"\n                \"Always return valid JSON in the expected format, never throw errors. \"\n                \"If multiple objects can be extracted, return them all in the structured format.\"\n            ),\n            advanced=True,\n        ),\n        TableInput(\n            name=\"output_schema\",\n            display_name=\"Output Schema\",\n            info=(\n                \"Schema Validation: Define the structure and data types for structured output. \"\n                \"No validation if no output schema.\"\n            ),\n            advanced=True,\n            required=False,\n            value=[],\n            table_schema=[\n                {\n                    \"name\": \"name\",\n                    \"display_name\": \"Name\",\n                    \"type\": \"str\",\n                    \"description\": \"Specify the name of the output field.\",\n                    \"default\": \"field\",\n                    \"edit_mode\": EditMode.INLINE,\n                },\n                {\n                    \"name\": \"description\",\n                    \"display_name\": \"Description\",\n                    \"type\": \"str\",\n                    \"description\": \"Describe the purpose of the output field.\",\n                    \"default\": \"description of field\",\n                    \"edit_mode\": EditMode.POPOVER,\n                },\n                {\n                    \"name\": \"type\",\n                    \"display_name\": \"Type\",\n                    \"type\": \"str\",\n                    \"edit_mode\": EditMode.INLINE,\n                    \"description\": (\"Indicate the data type of the output field (e.g., str, int, float, bool, dict).\"),\n                    \"options\": [\"str\", \"int\", \"float\", \"bool\", \"dict\"],\n                    \"default\": \"str\",\n                },\n                {\n                    \"name\": \"multiple\",\n                    \"display_name\": \"As List\",\n                    \"type\": \"boolean\",\n                    \"description\": \"Set to True if this output field should be a list of the specified type.\",\n                    \"default\": \"False\",\n                    \"edit_mode\": EditMode.INLINE,\n                },\n            ],\n        ),\n        *LCToolsAgentComponent.get_base_inputs(),\n        # removed memory inputs from agent component\n        # *memory_inputs,\n        BoolInput(\n            name=\"add_current_date_tool\",\n            display_name=\"Current Date\",\n            advanced=True,\n            info=\"If true, will add a tool to the agent that returns the current date.\",\n            value=True,\n        ),\n    ]\n    outputs = [\n        Output(name=\"response\", display_name=\"Response\", method=\"message_response\"),\n    ]\n\n    async def get_agent_requirements(self):\n        \"\"\"Get the agent requirements for the agent.\"\"\"\n        llm_model, display_name = await self.get_llm()\n        if llm_model is None:\n            msg = \"No language model selected. Please choose a model to proceed.\"\n            raise ValueError(msg)\n        self.model_name = get_model_name(llm_model, display_name=display_name)\n\n        # Get memory data\n        self.chat_history = await self.get_memory_data()\n        await logger.adebug(f\"Retrieved {len(self.chat_history)} chat history messages\")\n        if isinstance(self.chat_history, Message):\n            self.chat_history = [self.chat_history]\n\n        # Add current date tool if enabled\n        if self.add_current_date_tool:\n            if not isinstance(self.tools, list):  # type: ignore[has-type]\n                self.tools = []\n            current_date_tool = (await CurrentDateComponent(**self.get_base_args()).to_toolkit()).pop(0)\n\n            if not isinstance(current_date_tool, StructuredTool):\n                msg = \"CurrentDateComponent must be converted to a StructuredTool\"\n                raise TypeError(msg)\n            self.tools.append(current_date_tool)\n\n        # Set shared callbacks for tracing the tools used by the agent\n        self.set_tools_callbacks(self.tools, self._get_shared_callbacks())\n\n        return llm_model, self.chat_history, self.tools\n\n    async def message_response(self) -> Message:\n        try:\n            llm_model, self.chat_history, self.tools = await self.get_agent_requirements()\n            # Set up and run agent\n            self.set(\n                llm=llm_model,\n                tools=self.tools or [],\n                chat_history=self.chat_history,\n                input_value=self.input_value,\n                system_prompt=self.system_prompt,\n            )\n            agent = self.create_agent_runnable()\n            result = await self.run_agent(agent)\n\n            # Store result for potential JSON output\n            self._agent_result = result\n\n        except (ValueError, TypeError, KeyError) as e:\n            await logger.aerror(f\"{type(e).__name__}: {e!s}\")\n            raise\n        except ExceptionWithMessageError as e:\n            await logger.aerror(f\"ExceptionWithMessageError occurred: {e}\")\n            raise\n        # Avoid catching blind Exception; let truly unexpected exceptions propagate\n        except Exception as e:\n            await logger.aerror(f\"Unexpected error: {e!s}\")\n            raise\n        else:\n            return result\n\n    def _preprocess_schema(self, schema):\n        \"\"\"Preprocess schema to ensure correct data types for build_model_from_schema.\"\"\"\n        processed_schema = []\n        for field in schema:\n            processed_field = {\n                \"name\": str(field.get(\"name\", \"field\")),\n                \"type\": str(field.get(\"type\", \"str\")),\n                \"description\": str(field.get(\"description\", \"\")),\n                \"multiple\": field.get(\"multiple\", False),\n            }\n            # Ensure multiple is handled correctly\n            if isinstance(processed_field[\"multiple\"], str):\n                processed_field[\"multiple\"] = processed_field[\"multiple\"].lower() in [\n                    \"true\",\n                    \"1\",\n                    \"t\",\n                    \"y\",\n                    \"yes\",\n                ]\n            processed_schema.append(processed_field)\n        return processed_schema\n\n    async def build_structured_output_base(self, content: str):\n        \"\"\"Build structured output with optional BaseModel validation.\"\"\"\n        json_pattern = r\"\\{.*\\}\"\n        schema_error_msg = \"Try setting an output schema\"\n\n        # Try to parse content as JSON first\n        json_data = None\n        try:\n            json_data = json.loads(content)\n        except json.JSONDecodeError:\n            json_match = re.search(json_pattern, content, re.DOTALL)\n            if json_match:\n                try:\n                    json_data = json.loads(json_match.group())\n                except json.JSONDecodeError:\n                    return {\"content\": content, \"error\": schema_error_msg}\n            else:\n                return {\"content\": content, \"error\": schema_error_msg}\n\n        # If no output schema provided, return parsed JSON without validation\n        if not hasattr(self, \"output_schema\") or not self.output_schema or len(self.output_schema) == 0:\n            return json_data\n\n        # Use BaseModel validation with schema\n        try:\n            processed_schema = self._preprocess_schema(self.output_schema)\n            output_model = build_model_from_schema(processed_schema)\n\n            # Validate against the schema\n            if isinstance(json_data, list):\n                # Multiple objects\n                validated_objects = []\n                for item in json_data:\n                    try:\n                        validated_obj = output_model.model_validate(item)\n                        validated_objects.append(validated_obj.model_dump())\n                    except ValidationError as e:\n                        await logger.aerror(f\"Validation error for item: {e}\")\n                        # Include invalid items with error info\n                        validated_objects.append({\"data\": item, \"validation_error\": str(e)})\n                return validated_objects\n\n            # Single object\n            try:\n                validated_obj = output_model.model_validate(json_data)\n                return [validated_obj.model_dump()]  # Return as list for consistency\n            except ValidationError as e:\n                await logger.aerror(f\"Validation error: {e}\")\n                return [{\"data\": json_data, \"validation_error\": str(e)}]\n\n        except (TypeError, ValueError) as e:\n            await logger.aerror(f\"Error building structured output: {e}\")\n            # Fallback to parsed JSON without validation\n            return json_data\n\n    async def json_response(self) -> Data:\n        \"\"\"Convert agent response to structured JSON Data output with schema validation.\"\"\"\n        # Always use structured chat agent for JSON response mode for better JSON formatting\n        try:\n            system_components = []\n\n            # 1. Agent Instructions (system_prompt)\n            agent_instructions = getattr(self, \"system_prompt\", \"\") or \"\"\n            if agent_instructions:\n                system_components.append(f\"{agent_instructions}\")\n\n            # 2. Format Instructions\n            format_instructions = getattr(self, \"format_instructions\", \"\") or \"\"\n            if format_instructions:\n                system_components.append(f\"Format instructions: {format_instructions}\")\n\n            # 3. Schema Information from BaseModel\n            if hasattr(self, \"output_schema\") and self.output_schema and len(self.output_schema) > 0:\n                try:\n                    processed_schema = self._preprocess_schema(self.output_schema)\n                    output_model = build_model_from_schema(processed_schema)\n                    schema_dict = output_model.model_json_schema()\n                    schema_info = (\n                        \"You are given some text that may include format instructions, \"\n                        \"explanations, or other content alongside a JSON schema.\\n\\n\"\n                        \"Your task:\\n\"\n                        \"- Extract only the JSON schema.\\n\"\n                        \"- Return it as valid JSON.\\n\"\n                        \"- Do not include format instructions, explanations, or extra text.\\n\\n\"\n                        \"Input:\\n\"\n                        f\"{json.dumps(schema_dict, indent=2)}\\n\\n\"\n                        \"Output (only JSON schema):\"\n                    )\n                    system_components.append(schema_info)\n                except (ValidationError, ValueError, TypeError, KeyError) as e:\n                    await logger.aerror(f\"Could not build schema for prompt: {e}\", exc_info=True)\n\n            # Combine all components\n            combined_instructions = \"\\n\\n\".join(system_components) if system_components else \"\"\n            llm_model, self.chat_history, self.tools = await self.get_agent_requirements()\n            self.set(\n                llm=llm_model,\n                tools=self.tools or [],\n                chat_history=self.chat_history,\n                input_value=self.input_value,\n                system_prompt=combined_instructions,\n            )\n\n            # Create and run structured chat agent\n            try:\n                structured_agent = self.create_agent_runnable()\n            except (NotImplementedError, ValueError, TypeError) as e:\n                await logger.aerror(f\"Error with structured chat agent: {e}\")\n                raise\n            try:\n                result = await self.run_agent(structured_agent)\n            except (\n                ExceptionWithMessageError,\n                ValueError,\n                TypeError,\n                RuntimeError,\n            ) as e:\n                await logger.aerror(f\"Error with structured agent result: {e}\")\n                raise\n            # Extract content from structured agent result\n            if hasattr(result, \"content\"):\n                content = result.content\n            elif hasattr(result, \"text\"):\n                content = result.text\n            else:\n                content = str(result)\n\n        except (\n            ExceptionWithMessageError,\n            ValueError,\n            TypeError,\n            NotImplementedError,\n            AttributeError,\n        ) as e:\n            await logger.aerror(f\"Error with structured chat agent: {e}\")\n            # Fallback to regular agent\n            content_str = \"No content returned from agent\"\n            return Data(data={\"content\": content_str, \"error\": str(e)})\n\n        # Process with structured output validation\n        try:\n            structured_output = await self.build_structured_output_base(content)\n\n            # Handle different output formats\n            if isinstance(structured_output, list) and structured_output:\n                if len(structured_output) == 1:\n                    return Data(data=structured_output[0])\n                return Data(data={\"results\": structured_output})\n            if isinstance(structured_output, dict):\n                return Data(data=structured_output)\n            return Data(data={\"content\": content})\n\n        except (ValueError, TypeError) as e:\n            await logger.aerror(f\"Error in structured output processing: {e}\")\n            return Data(data={\"content\": content, \"error\": str(e)})\n\n    async def get_memory_data(self):\n        # TODO: This is a temporary fix to avoid message duplication. We should develop a function for this.\n        messages = (\n            await MemoryComponent(**self.get_base_args())\n            .set(\n                session_id=self.graph.session_id,\n                context_id=self.context_id,\n                order=\"Ascending\",\n                n_messages=self.n_messages,\n            )\n            .retrieve_messages()\n        )\n        return [\n            message for message in messages if getattr(message, \"id\", None) != getattr(self.input_value, \"id\", None)\n        ]\n\n    async def get_llm(self):\n        if not isinstance(self.agent_llm, str):\n            return self.agent_llm, None\n\n        try:\n            provider_info = MODEL_PROVIDERS_DICT.get(self.agent_llm)\n            if not provider_info:\n                msg = f\"Invalid model provider: {self.agent_llm}\"\n                raise ValueError(msg)\n\n            component_class = provider_info.get(\"component_class\")\n            display_name = component_class.display_name\n            inputs = provider_info.get(\"inputs\")\n            prefix = provider_info.get(\"prefix\", \"\")\n\n            return self._build_llm_model(component_class, inputs, prefix), display_name\n\n        except (AttributeError, ValueError, TypeError, RuntimeError) as e:\n            await logger.aerror(f\"Error building {self.agent_llm} language model: {e!s}\")\n            msg = f\"Failed to initialize language model: {e!s}\"\n            raise ValueError(msg) from e\n\n    def _build_llm_model(self, component, inputs, prefix=\"\"):\n        model_kwargs = {}\n        for input_ in inputs:\n            if hasattr(self, f\"{prefix}{input_.name}\"):\n                model_kwargs[input_.name] = getattr(self, f\"{prefix}{input_.name}\")\n        return component.set(**model_kwargs).build_model()\n\n    def set_component_params(self, component):\n        provider_info = MODEL_PROVIDERS_DICT.get(self.agent_llm)\n        if provider_info:\n            inputs = provider_info.get(\"inputs\")\n            prefix = provider_info.get(\"prefix\")\n            # Filter out json_mode and only use attributes that exist on this component\n            model_kwargs = {}\n            for input_ in inputs:\n                if hasattr(self, f\"{prefix}{input_.name}\"):\n                    model_kwargs[input_.name] = getattr(self, f\"{prefix}{input_.name}\")\n\n            return component.set(**model_kwargs)\n        return component\n\n    def delete_fields(self, build_config: dotdict, fields: dict | list[str]) -> None:\n        \"\"\"Delete specified fields from build_config.\"\"\"\n        for field in fields:\n            if build_config is not None and field in build_config:\n                build_config.pop(field, None)\n\n    def update_input_types(self, build_config: dotdict) -> dotdict:\n        \"\"\"Update input types for all fields in build_config.\"\"\"\n        for key, value in build_config.items():\n            if isinstance(value, dict):\n                if value.get(\"input_types\") is None:\n                    build_config[key][\"input_types\"] = []\n            elif hasattr(value, \"input_types\") and value.input_types is None:\n                value.input_types = []\n        return build_config\n\n    async def update_build_config(\n        self, build_config: dotdict, field_value: str, field_name: str | None = None\n    ) -> dotdict:\n        # Iterate over all providers in the MODEL_PROVIDERS_DICT\n        # Existing logic for updating build_config\n        if field_name in (\"agent_llm\",):\n            build_config[\"agent_llm\"][\"value\"] = field_value\n            provider_info = MODEL_PROVIDERS_DICT.get(field_value)\n            if provider_info:\n                component_class = provider_info.get(\"component_class\")\n                if component_class and hasattr(component_class, \"update_build_config\"):\n                    # Call the component class's update_build_config method\n                    build_config = await update_component_build_config(\n                        component_class, build_config, field_value, \"model_name\"\n                    )\n\n            provider_configs: dict[str, tuple[dict, list[dict]]] = {\n                provider: (\n                    MODEL_PROVIDERS_DICT[provider][\"fields\"],\n                    [\n                        MODEL_PROVIDERS_DICT[other_provider][\"fields\"]\n                        for other_provider in MODEL_PROVIDERS_DICT\n                        if other_provider != provider\n                    ],\n                )\n                for provider in MODEL_PROVIDERS_DICT\n            }\n            if field_value in provider_configs:\n                fields_to_add, fields_to_delete = provider_configs[field_value]\n\n                # Delete fields from other providers\n                for fields in fields_to_delete:\n                    self.delete_fields(build_config, fields)\n\n                # Add provider-specific fields\n                if field_value == \"OpenAI\" and not any(field in build_config for field in fields_to_add):\n                    build_config.update(fields_to_add)\n                else:\n                    build_config.update(fields_to_add)\n                # Reset input types for agent_llm\n                build_config[\"agent_llm\"][\"input_types\"] = []\n                build_config[\"agent_llm\"][\"display_name\"] = \"Model Provider\"\n            elif field_value == \"connect_other_models\":\n                # Delete all provider fields\n                self.delete_fields(build_config, ALL_PROVIDER_FIELDS)\n                # # Update with custom component\n                custom_component = DropdownInput(\n                    name=\"agent_llm\",\n                    display_name=\"Language Model\",\n                    info=\"The provider of the language model that the agent will use to generate responses.\",\n                    options=[*MODEL_PROVIDERS_LIST],\n                    real_time_refresh=True,\n                    refresh_button=False,\n                    input_types=[\"LanguageModel\"],\n                    placeholder=\"Awaiting model input.\",\n                    options_metadata=[MODELS_METADATA[key] for key in MODEL_PROVIDERS_LIST if key in MODELS_METADATA],\n                    external_options={\n                        \"fields\": {\n                            \"data\": {\n                                \"node\": {\n                                    \"name\": \"connect_other_models\",\n                                    \"display_name\": \"Connect other models\",\n                                    \"icon\": \"CornerDownLeft\",\n                                },\n                            }\n                        },\n                    },\n                )\n                build_config.update({\"agent_llm\": custom_component.to_dict()})\n            # Update input types for all fields\n            build_config = self.update_input_types(build_config)\n\n            # Validate required keys\n            default_keys = [\n                \"code\",\n                \"_type\",\n                \"agent_llm\",\n                \"tools\",\n                \"input_value\",\n                \"add_current_date_tool\",\n                \"system_prompt\",\n                \"agent_description\",\n                \"max_iterations\",\n                \"handle_parsing_errors\",\n                \"verbose\",\n            ]\n            missing_keys = [key for key in default_keys if key not in build_config]\n            if missing_keys:\n                msg = f\"Missing required keys in build_config: {missing_keys}\"\n                raise ValueError(msg)\n        if (\n            isinstance(self.agent_llm, str)\n            and self.agent_llm in MODEL_PROVIDERS_DICT\n            and field_name in MODEL_DYNAMIC_UPDATE_FIELDS\n        ):\n            provider_info = MODEL_PROVIDERS_DICT.get(self.agent_llm)\n            if provider_info:\n                component_class = provider_info.get(\"component_class\")\n                component_class = self.set_component_params(component_class)\n                prefix = provider_info.get(\"prefix\")\n                if component_class and hasattr(component_class, \"update_build_config\"):\n                    # Call each component class's update_build_config method\n                    # remove the prefix from the field_name\n                    if isinstance(field_name, str) and isinstance(prefix, str):\n                        field_name_without_prefix = field_name.replace(prefix, \"\")\n                    else:\n                        field_name_without_prefix = field_name\n                    build_config = await update_component_build_config(\n                        component_class, build_config, field_value, field_name_without_prefix\n                    )\n        return dotdict({k: v.to_dict() if hasattr(v, \"to_dict\") else v for k, v in build_config.items()})\n\n    async def _get_tools(self) -> list[Tool]:\n        component_toolkit = get_component_toolkit()\n        tools_names = self._build_tools_names()\n        agent_description = self.get_tool_description()\n        # TODO: Agent Description Depreciated Feature to be removed\n        description = f\"{agent_description}{tools_names}\"\n\n        tools = component_toolkit(component=self).get_tools(\n            tool_name=\"Call_Agent\",\n            tool_description=description,\n            # here we do not use the shared callbacks as we are exposing the agent as a tool\n            callbacks=self.get_langchain_callbacks(),\n        )\n        if hasattr(self, \"tools_metadata\"):\n            tools = component_toolkit(component=self, metadata=self.tools_metadata).update_tools_metadata(tools=tools)\n\n        return tools\n"
+              },
+              "context_id": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Context ID",
+                "dynamic": false,
+                "info": "The context ID of the chat. Adds an extra layer to the local memory.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "context_id",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              },
+              "format_instructions": {
+                "_input_type": "MultilineInput",
+                "advanced": true,
+                "ai_enabled": false,
+                "copy_field": false,
+                "display_name": "Output Format Instructions",
+                "dynamic": false,
+                "info": "Generic Template for structured output formatting. Valid only with Structured response.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "format_instructions",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": "You are an AI that extracts structured JSON objects from unstructured text. Use a predefined schema with expected types (str, int, float, bool, dict). Extract ALL relevant instances that match the schema - if multiple patterns exist, capture them all. Fill missing or ambiguous values with defaults: null for missing values. Remove exact duplicates but keep variations that have different field values. Always return valid JSON in the expected format, never throw errors. If multiple objects can be extracted, return them all in the structured format."
+              },
+              "frequency_penalty": {
+                "_input_type": "SliderInput",
+                "advanced": true,
+                "display_name": "Frequency Penalty",
+                "dynamic": false,
+                "info": "Penalty for frequency of token usage.",
+                "input_types": [],
+                "max_label": "",
+                "max_label_icon": "",
+                "min_label": "",
+                "min_label_icon": "",
+                "name": "frequency_penalty",
+                "override_skip": false,
+                "placeholder": "",
+                "range_spec": {
+                  "max": 2,
+                  "min": -2,
+                  "step": 0.01,
+                  "step_type": "float"
+                },
+                "required": false,
+                "show": true,
+                "slider_buttons": false,
+                "slider_buttons_options": [],
+                "slider_input": false,
+                "title_case": false,
+                "tool_mode": false,
+                "track_in_telemetry": false,
+                "type": "slider",
+                "value": 0.5
+              },
+              "handle_parsing_errors": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Handle Parse Errors",
+                "dynamic": false,
+                "info": "Should the Agent fix errors when reading user input for better processing?",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "handle_parsing_errors",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "bool",
+                "value": true
+              },
+              "input_value": {
+                "_input_type": "MessageInput",
+                "advanced": false,
+                "display_name": "Input",
+                "dynamic": false,
+                "info": "The input provided by the user for the agent to process.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "input_value",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              },
+              "is_refresh": false,
+              "logit_bias": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "Logit Bias",
+                "dynamic": false,
+                "info": "JSON string of token IDs to bias or suppress (e.g., {\"1003\": -100, \"1004\": 100}).",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "logit_bias",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              },
+              "logprobs": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Log Probabilities",
+                "dynamic": false,
+                "info": "Whether to return log probabilities of the output tokens.",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "logprobs",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "bool",
+                "value": true
+              },
+              "max_iterations": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Max Iterations",
+                "dynamic": false,
+                "info": "The maximum number of attempts the agent can make to complete its task before it stops.",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "max_iterations",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "int",
+                "value": 15
+              },
+              "max_tokens": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Max Tokens",
+                "dynamic": false,
+                "info": "The maximum number of tokens to generate.",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "max_tokens",
+                "override_skip": false,
+                "placeholder": "",
+                "range_spec": {
+                  "max": 4096,
+                  "min": 1,
+                  "step": 0.1,
+                  "step_type": "float"
+                },
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "int",
+                "value": 1000
+              },
+              "model_name": {
+                "_input_type": "DropdownInput",
+                "advanced": false,
+                "combobox": true,
+                "dialog_inputs": {},
+                "display_name": "Model Name",
+                "dynamic": false,
+                "external_options": {},
+                "info": "To see the model names, first choose a provider. Then, enter your API key and click the refresh button next to the model name.",
+                "input_types": [],
+                "name": "model_name",
+                "options": [
+                  "ibm/granite-3-2-8b-instruct",
+                  "ibm/granite-3-3-8b-instruct",
+                  "ibm/granite-3-8b-instruct",
+                  "ibm/granite-4-h-small",
+                  "ibm/granite-8b-code-instruct",
+                  "ibm/granite-guardian-3-8b",
+                  "meta-llama/llama-3-2-11b-vision-instruct",
+                  "meta-llama/llama-3-2-90b-vision-instruct",
+                  "meta-llama/llama-3-3-70b-instruct",
+                  "meta-llama/llama-3-405b-instruct",
+                  "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+                  "meta-llama/llama-guard-3-11b-vision",
+                  "mistral-large-2512",
+                  "mistralai/mistral-medium-2505",
+                  "mistralai/mistral-small-3-1-24b-instruct-2503",
+                  "openai/gpt-oss-120b"
+                ],
+                "options_metadata": [],
+                "override_skip": false,
+                "placeholder": "",
+                "real_time_refresh": true,
+                "refresh_button": true,
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "str",
+                "value": "meta-llama/llama-3-3-70b-instruct"
+              },
+              "n_messages": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Number of Chat History Messages",
+                "dynamic": false,
+                "info": "Number of chat history messages to retrieve.",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "n_messages",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "int",
+                "value": 100
+              },
+              "output_schema": {
+                "_input_type": "TableInput",
+                "advanced": true,
+                "display_name": "Output Schema",
+                "dynamic": false,
+                "info": "Schema Validation: Define the structure and data types for structured output. No validation if no output schema.",
+                "input_types": [],
+                "is_list": true,
+                "list_add_label": "Add More",
+                "name": "output_schema",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "table_icon": "Table",
+                "table_schema": [
+                  {
+                    "default": "field",
+                    "description": "Specify the name of the output field.",
+                    "display_name": "Name",
+                    "edit_mode": "inline",
+                    "formatter": "text",
+                    "name": "name",
+                    "type": "str"
+                  },
+                  {
+                    "default": "description of field",
+                    "description": "Describe the purpose of the output field.",
+                    "display_name": "Description",
+                    "edit_mode": "popover",
+                    "formatter": "text",
+                    "name": "description",
+                    "type": "str"
+                  },
+                  {
+                    "default": "str",
+                    "description": "Indicate the data type of the output field (e.g., str, int, float, bool, dict).",
+                    "display_name": "Type",
+                    "edit_mode": "inline",
+                    "formatter": "text",
+                    "name": "type",
+                    "options": [
+                      "str",
+                      "int",
+                      "float",
+                      "bool",
+                      "dict"
+                    ],
+                    "type": "str"
+                  },
+                  {
+                    "default": "False",
+                    "description": "Set to True if this output field should be a list of the specified type.",
+                    "display_name": "As List",
+                    "edit_mode": "inline",
+                    "formatter": "text",
+                    "name": "multiple",
+                    "type": "boolean"
+                  }
+                ],
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "trigger_icon": "Table",
+                "trigger_text": "Open table",
+                "type": "table",
+                "value": []
+              },
+              "presence_penalty": {
+                "_input_type": "SliderInput",
+                "advanced": true,
+                "display_name": "Presence Penalty",
+                "dynamic": false,
+                "info": "Penalty for token presence in prior text.",
+                "input_types": [],
+                "max_label": "",
+                "max_label_icon": "",
+                "min_label": "",
+                "min_label_icon": "",
+                "name": "presence_penalty",
+                "override_skip": false,
+                "placeholder": "",
+                "range_spec": {
+                  "max": 2,
+                  "min": -2,
+                  "step": 0.01,
+                  "step_type": "float"
+                },
+                "required": false,
+                "show": true,
+                "slider_buttons": false,
+                "slider_buttons_options": [],
+                "slider_input": false,
+                "title_case": false,
+                "tool_mode": false,
+                "track_in_telemetry": false,
+                "type": "slider",
+                "value": 0.3
+              },
+              "project_id": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "watsonx Project ID",
+                "dynamic": false,
+                "info": "The project ID or deployment space ID that is associated with the foundation model.",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "project_id",
+                "override_skip": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": "6d2d6397-5a7d-4fcb-91d9-25baacd6781a"
+              },
+              "seed": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Random Seed",
+                "dynamic": false,
+                "info": "The random seed for the model.",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "seed",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "int",
+                "value": 8
+              },
+              "stop_sequence": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "Stop Sequence",
+                "dynamic": false,
+                "info": "Sequence where generation should stop.",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "stop_sequence",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              },
+              "system_prompt": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "ai_enabled": false,
+                "copy_field": false,
+                "display_name": "Agent Instructions",
+                "dynamic": false,
+                "info": "System Prompt: Initial instructions and context provided to guide the agent's behavior.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "system_prompt",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": "You are an HR assistant agent helping employees with HR-related questions.\nYou have access to two tools: `vault_credentials_tool` and `database_tool`.\n\n---\n\n### TOOL CALL RULES — FOLLOW EXACTLY\n\n**On every user message, execute these steps in order. Do not skip any step.**\n\n---\n\n**STEP 1 — Call `vault_credentials_tool`:**\n\n- Call the tool with no additional parameters\n- The tool will automatically determine the correct database role based on the user's identity — do NOT attempt to pass a role or credentials\n- Do NOT ask the user for a token or credentials — the user token is already configured in the system\n- Wait for the tool response before proceeding\n- **IMPORTANT:** Store the complete response object returned by this tool — you will need to pass it to the next tool\n- If the tool returns an error, do not proceed to Step 2 — report the error and stop\n\n**STEP 2 — Call `database_tool`:**\n\n- **CRITICAL:** For the `vault_credentials` parameter, you MUST pass the **actual data object** returned by `vault_credentials_tool` in Step 1\n- **DO NOT** pass a function reference like `{\"function_name\": \"get_credentials\", \"args\": []}`\n- **DO NOT** pass the string \"get_credentials\" or any function name\n- **DO** pass the complete credentials object that contains fields like `username`, `password`, `database_role`, etc.\n- Example of CORRECT usage: `vault_credentials = <the actual object with username/password fields returned from Step 1>`\n- Example of INCORRECT usage: `vault_credentials = {\"function_name\": \"get_credentials\", \"args\": []}`\n- Set `query_type`:\n  - `\"salary_info\"` if the user asked about salary, compensation, pay, bonus, or total compensation\n  - `\"basic_info\"` for all other queries\n- Set `employee_id` only if the user specified a particular employee; otherwise leave it empty\n- Wait for the tool response before proceeding\n\n**STEP 3 — Present the results:**\n\n- Format the results clearly and in plain language\n- If a step failed (e.g., permission denied), report the error clearly and do not attempt to retry or work around it\n\n---\n\n### STRICT RULES\n\n- Always call `vault_credentials_tool` first on every message — never skip it\n- The output from `vault_credentials_tool` is a data object, not a function — treat it as data and pass it directly to `database_tool`\n- Never pass function references, function names, or callable objects as parameters — only pass actual data values\n- Never ask the user for a JWT token, credentials, or any authentication information\n- Never output raw credentials, usernames, or passwords to the user\n- Never guess or fabricate data — only report what the tools return\n- If `vault_credentials_tool` returns an error, do not call `database_tool` — report the error and stop\n- If `database_tool` returns a permission error, report it clearly — this means the user does not have access to that data\n"
+              },
+              "temperature": {
+                "_input_type": "SliderInput",
+                "advanced": true,
+                "display_name": "Temperature",
+                "dynamic": false,
+                "info": "Controls randomness, higher values increase diversity.",
+                "input_types": [],
+                "max_label": "",
+                "max_label_icon": "",
+                "min_label": "",
+                "min_label_icon": "",
+                "name": "temperature",
+                "override_skip": false,
+                "placeholder": "",
+                "range_spec": {
+                  "max": 2,
+                  "min": 0,
+                  "step": 0.01,
+                  "step_type": "float"
+                },
+                "required": false,
+                "show": true,
+                "slider_buttons": false,
+                "slider_buttons_options": [],
+                "slider_input": false,
+                "title_case": false,
+                "tool_mode": false,
+                "track_in_telemetry": false,
+                "type": "slider",
+                "value": 0.1
+              },
+              "tools": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Tools",
+                "dynamic": false,
+                "info": "These are the tools that the agent can use to help with tasks.",
+                "input_types": [
+                  "Tool"
+                ],
+                "list": true,
+                "list_add_label": "Add More",
+                "name": "tools",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "other",
+                "value": ""
+              },
+              "top_logprobs": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Top Log Probabilities",
+                "dynamic": false,
+                "info": "Number of most likely tokens to return at each position.",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "top_logprobs",
+                "override_skip": false,
+                "placeholder": "",
+                "range_spec": {
+                  "max": 20,
+                  "min": 1,
+                  "step": 0.1,
+                  "step_type": "float"
+                },
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "int",
+                "value": 3
+              },
+              "top_p": {
+                "_input_type": "SliderInput",
+                "advanced": true,
+                "display_name": "Top P",
+                "dynamic": false,
+                "info": "The cumulative probability cutoff for token selection. Lower values mean sampling from a smaller, more top-weighted nucleus.",
+                "input_types": [],
+                "max_label": "",
+                "max_label_icon": "",
+                "min_label": "",
+                "min_label_icon": "",
+                "name": "top_p",
+                "override_skip": false,
+                "placeholder": "",
+                "range_spec": {
+                  "max": 1,
+                  "min": 0,
+                  "step": 0.01,
+                  "step_type": "float"
+                },
+                "required": false,
+                "show": true,
+                "slider_buttons": false,
+                "slider_buttons_options": [],
+                "slider_input": false,
+                "title_case": false,
+                "tool_mode": false,
+                "track_in_telemetry": false,
+                "type": "slider",
+                "value": 0.9
+              },
+              "verbose": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Verbose",
+                "dynamic": false,
+                "info": "",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "verbose",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "bool",
+                "value": true
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "Agent"
+        },
+        "dragging": false,
+        "id": "Agent-4qDU3",
+        "measured": {
+          "height": 759,
+          "width": 320
+        },
+        "position": {
+          "x": 1156.9528749317694,
+          "y": -1044.2827250801909
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "description": "STEP 2: Query the employee database using credentials from get_credentials. CRITICAL: You must FIRST call get_credentials, then pass its RESULT object (containing username/password) as the vault_credentials parameter. DO NOT pass a function reference - pass the actual credentials data returned by get_credentials.",
+          "display_name": "Database Tool",
+          "id": "database_tool-2grIS",
+          "node": {
+            "base_classes": [
+              "Data"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "STEP 2: Query the employee database using credentials from get_credentials. CRITICAL: You must FIRST call get_credentials, then pass its RESULT object (containing username/password) as the vault_credentials parameter. DO NOT pass a function reference - pass the actual credentials data returned by get_credentials.",
+            "display_name": "Database Tool",
+            "documentation": "https://www.postgresql.org/docs/",
+            "edited": false,
+            "field_order": [
+              "vault_credentials",
+              "query_type",
+              "employee_id",
+              "db_host",
+              "db_port",
+              "db_name"
+            ],
+            "frozen": false,
+            "icon": "Database",
+            "legacy": false,
+            "metadata": {
+              "code_hash": "02924a63e91e",
+              "dependencies": {
+                "dependencies": [
+                  {
+                    "name": "psycopg2",
+                    "version": "2.9.11"
+                  },
+                  {
+                    "name": "lfx",
+                    "version": "0.2.2"
+                  }
+                ],
+                "total_dependencies": 2
+              },
+              "module": "custom_components.database_tool"
+            },
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Toolset",
+                "group_outputs": false,
+                "hidden": null,
+                "loop_types": null,
+                "method": "to_toolkit",
+                "name": "component_as_tool",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Tool",
+                "tool_mode": true,
+                "types": [
+                  "Tool"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "\"\"\"\nLangflow Custom Component: Database Tool\nQueries PostgreSQL database using dynamic credentials from Vault\n\"\"\"\n\nfrom typing import Any\nimport psycopg2\nimport json\n\nfrom lfx.custom import Component\nfrom lfx.io import MessageTextInput, StrInput, DataInput, Output\nfrom lfx.schema import Data\n\n\nclass DatabaseToolComponent(Component):\n    display_name = \"Database Tool\"\n    description = \"STEP 2: Query the employee database using credentials from get_credentials. CRITICAL: You must FIRST call get_credentials, then pass its RESULT object (containing username/password) as the vault_credentials parameter. DO NOT pass a function reference - pass the actual credentials data returned by get_credentials.\"\n    documentation = \"https://www.postgresql.org/docs/\"\n    icon = \"Database\"\n    name = \"database_tool\"\n    \n    inputs = [\n        DataInput(\n            name=\"vault_credentials\",\n            display_name=\"Vault Credentials\",\n            info=\"Dynamic database credentials from Vault Tool\",\n            tool_mode=True,\n        ),\n        MessageTextInput(\n            name=\"query_type\",\n            display_name=\"Query Type\",\n            info=\"Type of query: 'basic_info' for employee basic information or 'salary_info' for salary data\",\n            tool_mode=True,\n        ),\n        StrInput(\n            name=\"employee_id\",\n            display_name=\"Employee ID\",\n            info=\"Optional: Specific employee ID to query (leave empty for all employees)\",\n            value=\"\",\n            tool_mode=True,\n        ),\n        StrInput(\n            name=\"db_host\",\n            display_name=\"Database Host\",\n            info=\"PostgreSQL database host\",\n            value=\"localhost\",\n            advanced=True,\n        ),\n        StrInput(\n            name=\"db_port\",\n            display_name=\"Database Port\",\n            info=\"PostgreSQL database port\",\n            value=\"5432\",\n            advanced=True,\n        ),\n        StrInput(\n            name=\"db_name\",\n            display_name=\"Database Name\",\n            info=\"PostgreSQL database name\",\n            value=\"employee_db\",\n            advanced=True,\n        ),\n    ]\n    \n    outputs = [\n        Output(\n            display_name=\"Query Results\",\n            name=\"results\",\n            method=\"query_database\",\n        ),\n    ]\n    \n    def query_database(self) -> Data:\n        \"\"\"\n        Query the database using dynamic credentials\n        \n        Returns:\n            Data object with query results or error information\n        \"\"\"\n        try:\n            # Extract credentials from Vault Tool output\n            creds = self.vault_credentials\n            \n            # Handle different input formats\n            if hasattr(creds, 'data'):\n                creds_data = creds.data\n            elif isinstance(creds, str):\n                # Parse JSON string if credentials come as string\n                try:\n                    creds_data = json.loads(creds)\n                except json.JSONDecodeError as e:\n                    error_msg = f\"Invalid JSON in vault_credentials: {str(e)}\"\n                    self.log(error_msg)\n                    self.status = \"❌ Invalid credentials format\"\n                    return Data(\n                        data={\n                            \"error\": error_msg,\n                            \"status\": \"failed\"\n                        }\n                    )\n            else:\n                creds_data = creds\n            \n            # Check if credentials retrieval was successful\n            if creds_data.get(\"status\") == \"failed\":\n                error_msg = f\"Cannot query database: {creds_data.get('error', 'Unknown error')}\"\n                self.log(error_msg)\n                self.status = \"❌ Invalid credentials\"\n                return Data(\n                    data={\n                        \"error\": error_msg,\n                        \"status\": \"failed\"\n                    }\n                )\n            \n            username = creds_data.get(\"username\")\n            password = creds_data.get(\"password\")\n            \n            if not username or not password:\n                error_msg = \"Missing username or password in credentials\"\n                self.log(error_msg)\n                self.status = \"❌ Invalid credentials\"\n                return Data(\n                    data={\n                        \"error\": error_msg,\n                        \"status\": \"failed\"\n                    }\n                )\n            \n            # Extract query type\n            query_type = self.query_type\n            if hasattr(query_type, 'text'):\n                query_type = query_type.text.lower()\n            else:\n                query_type = str(query_type).lower()\n            \n            # Determine which table to query and build SQL\n            if \"basic\" in query_type or \"basic_info\" in query_type:\n                table_name = \"employee_basic_info\"\n                if self.employee_id and self.employee_id.strip():\n                    sql_query = (\n                        \"SELECT employee_id, first_name, last_name, email, department, \"\n                        \"job_title, hire_date, office_location \"\n                        \"FROM employee_basic_info WHERE employee_id = %s\"\n                    )\n                    query_params = (self.employee_id.strip(),)\n                    self.log(f\"Querying employee_basic_info for employee_id: {self.employee_id}\")\n                else:\n                    sql_query = (\n                        \"SELECT employee_id, first_name, last_name, email, department, \"\n                        \"job_title, hire_date, office_location \"\n                        \"FROM employee_basic_info ORDER BY employee_id LIMIT 10\"\n                    )\n                    query_params = None\n                    self.log(\"Querying employee_basic_info for all employees (limit 10)\")\n            elif \"salary\" in query_type or \"salary_info\" in query_type:\n                table_name = \"employee_salary_info\"\n                # JOIN with basic_info to include employee name alongside salary data\n                if self.employee_id and self.employee_id.strip():\n                    sql_query = (\n                        \"SELECT b.employee_id, b.first_name, b.last_name, b.department, \"\n                        \"s.annual_salary, s.bonus_percentage, s.stock_options, \"\n                        \"s.salary_grade, s.performance_rating \"\n                        \"FROM employee_salary_info s \"\n                        \"JOIN employee_basic_info b ON s.employee_id = b.employee_id \"\n                        \"WHERE s.employee_id = %s\"\n                    )\n                    query_params = (self.employee_id.strip(),)\n                    self.log(f\"Querying salary info for employee_id: {self.employee_id}\")\n                else:\n                    sql_query = (\n                        \"SELECT b.employee_id, b.first_name, b.last_name, b.department, \"\n                        \"s.annual_salary, s.bonus_percentage, s.stock_options, \"\n                        \"s.salary_grade, s.performance_rating \"\n                        \"FROM employee_salary_info s \"\n                        \"JOIN employee_basic_info b ON s.employee_id = b.employee_id \"\n                        \"ORDER BY s.employee_id LIMIT 10\"\n                    )\n                    query_params = None\n                    self.log(\"Querying salary info for all employees (limit 10)\")\n            else:\n                error_msg = f\"Invalid query type: {query_type}. Use 'basic_info' or 'salary_info'\"\n                self.log(error_msg)\n                self.status = \"❌ Invalid query type\"\n                return Data(\n                    data={\n                        \"error\": error_msg,\n                        \"status\": \"failed\"\n                    }\n                )\n            \n            # Connect to database\n            self.log(f\"Connecting to database as user: {username}\")\n            conn = psycopg2.connect(\n                host=self.db_host,\n                port=self.db_port,\n                database=self.db_name,\n                user=username,\n                password=password,\n                connect_timeout=10\n            )\n            \n            cursor = conn.cursor()\n            \n            # Execute query\n            if query_params:\n                cursor.execute(sql_query, query_params)\n            else:\n                cursor.execute(sql_query)\n            \n            # Fetch results\n            rows = cursor.fetchall()\n            column_names = [desc[0] for desc in cursor.description]\n            \n            # Convert to list of dictionaries\n            results = []\n            for row in rows:\n                results.append(dict(zip(column_names, row)))\n            \n            # Close connection\n            cursor.close()\n            conn.close()\n            \n            # Return results\n            result_data = {\n                \"status\": \"success\",\n                \"table\": table_name,\n                \"row_count\": len(results),\n                \"data\": results\n            }\n            \n            self.log(f\"✓ Successfully queried {table_name}: {len(results)} rows returned\")\n            self.status = f\"✓ Query successful: {len(results)} rows\"\n            \n            return Data(data=result_data)\n            \n        except psycopg2.Error as e:\n            error_msg = f\"Database error: {str(e)}\"\n            self.log(error_msg)\n            \n            # Check if it's a permission error\n            if \"permission denied\" in str(e).lower():\n                self.status = \"❌ Permission denied\"\n                error_msg = f\"Access denied: User does not have permission to access {table_name}\"\n            else:\n                self.status = \"❌ Database error\"\n            \n            return Data(\n                data={\n                    \"error\": error_msg,\n                    \"status\": \"failed\"\n                }\n            )\n        except Exception as e:\n            error_msg = f\"Unexpected error: {str(e)}\"\n            self.log(error_msg)\n            self.status = \"❌ Unexpected error\"\n            return Data(\n                data={\n                    \"error\": error_msg,\n                    \"status\": \"failed\"\n                }\n            )\n\n# Made with Bob\n"
+              },
+              "db_host": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "Database Host",
+                "dynamic": false,
+                "info": "PostgreSQL database host",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "db_host",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": "postgres"
+              },
+              "db_name": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "Database Name",
+                "dynamic": false,
+                "info": "PostgreSQL database name",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "db_name",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": "employee_db"
+              },
+              "db_port": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "Database Port",
+                "dynamic": false,
+                "info": "PostgreSQL database port",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "db_port",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": "5432"
+              },
+              "employee_id": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "Employee ID",
+                "dynamic": false,
+                "info": "Optional: Specific employee ID to query (leave empty for all employees)",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "employee_id",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              },
+              "query_type": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Query Type",
+                "dynamic": false,
+                "info": "Type of query: 'basic_info' for employee basic information or 'salary_info' for salary data",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "query_type",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              },
+              "tools_metadata": {
+                "_input_type": "ToolsInput",
+                "advanced": false,
+                "display_name": "Actions",
+                "dynamic": false,
+                "info": "Modify tool names and descriptions to help agents understand when to use each tool.",
+                "is_list": true,
+                "list_add_label": "Add More",
+                "name": "tools_metadata",
+                "override_skip": false,
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "tools",
+                "value": [
+                  {
+                    "args": {
+                      "employee_id": {
+                        "default": "",
+                        "description": "Optional: Specific employee ID to query (leave empty for all employees)",
+                        "title": "Employee Id",
+                        "type": "string"
+                      },
+                      "query_type": {
+                        "default": "",
+                        "description": "Type of query: 'basic_info' for employee basic information or 'salary_info' for salary data",
+                        "title": "Query Type",
+                        "type": "string"
+                      },
+                      "vault_credentials": {
+                        "default": "",
+                        "description": "Dynamic database credentials from Vault Tool",
+                        "title": "Vault Credentials",
+                        "type": "string"
+                      }
+                    },
+                    "description": "STEP 2: Query the employee database using credentials from get_credentials. CRITICAL: You must FIRST call get_credentials, then pass its RESULT object (containing username/password) as the vault_credentials parameter. DO NOT pass a function reference - pass the actual credentials data returned by get_credentials.",
+                    "display_description": "STEP 2: Query the employee database using credentials from get_credentials. CRITICAL: You must FIRST call get_credentials, then pass its RESULT object (containing username/password) as the vault_credentials parameter. DO NOT pass a function reference - pass the actual credentials data returned by get_credentials.",
+                    "display_name": "query_database",
+                    "name": "query_database",
+                    "readonly": false,
+                    "status": true,
+                    "tags": [
+                      "query_database"
+                    ]
+                  }
+                ]
+              },
+              "vault_credentials": {
+                "_input_type": "DataInput",
+                "advanced": false,
+                "display_name": "Vault Credentials",
+                "dynamic": false,
+                "info": "Dynamic database credentials from Vault Tool",
+                "input_types": [
+                  "Data"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "vault_credentials",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "other",
+                "value": ""
+              }
+            },
+            "tool_mode": true
+          },
+          "showNode": true,
+          "type": "database_tool"
+        },
+        "dragging": false,
+        "id": "database_tool-2grIS",
+        "measured": {
+          "height": 298,
+          "width": 320
+        },
+        "position": {
+          "x": 679.1689864353685,
+          "y": -683.4009620294198
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "description": "STEP 1: Call this tool FIRST to obtain database credentials from Vault. Exchanges user token and retrieves dynamic credentials. Returns a credentials object with username, password, and database_role. You MUST call this before using query_database tool.",
+          "display_name": "Vault Credentials Tool",
+          "id": "vault_credentials_tool-KCi9s",
+          "node": {
+            "base_classes": [
+              "Data"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "STEP 1: Call this tool FIRST to obtain database credentials from Vault. Exchanges user token and retrieves dynamic credentials. Returns a credentials object with username, password, and database_role. You MUST call this before using query_database tool.",
+            "display_name": "Vault Credentials Tool",
+            "documentation": "https://developer.hashicorp.com/vault/docs/auth/jwt",
+            "edited": false,
+            "field_order": [
+              "input_value",
+              "user_jwt_token",
+              "token_endpoint",
+              "exchange_client_id",
+              "exchange_client_secret",
+              "agent_client_id",
+              "agent_client_secret",
+              "audience",
+              "scope",
+              "use_delegation",
+              "vault_addr",
+              "jwt_auth_path",
+              "jwt_role"
+            ],
+            "frozen": false,
+            "icon": "Database",
+            "legacy": false,
+            "metadata": {
+              "code_hash": "ca0edf96ffaa",
+              "dependencies": {
+                "dependencies": [
+                  {
+                    "name": "requests",
+                    "version": "2.32.5"
+                  },
+                  {
+                    "name": "jwt",
+                    "version": "2.10.1"
+                  },
+                  {
+                    "name": "lfx",
+                    "version": "0.2.2"
+                  }
+                ],
+                "total_dependencies": 3
+              },
+              "module": "custom_components.vault_credentials_tool"
+            },
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Toolset",
+                "group_outputs": false,
+                "hidden": null,
+                "loop_types": null,
+                "method": "to_toolkit",
+                "name": "component_as_tool",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Tool",
+                "tool_mode": true,
+                "types": [
+                  "Tool"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "agent_client_id": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "Agent Client ID",
+                "dynamic": false,
+                "info": "Client ID for the Agent Bot (provides actor token)",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "agent_client_id",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": "caf77fa3-5873-403e-900e-d8b0c2a8e540"
+              },
+              "agent_client_secret": {
+                "_input_type": "SecretStrInput",
+                "advanced": true,
+                "display_name": "Agent Client Secret",
+                "dynamic": false,
+                "info": "Client secret for the Agent Bot",
+                "input_types": [],
+                "load_from_db": false,
+                "name": "agent_client_secret",
+                "override_skip": false,
+                "password": true,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              },
+              "audience": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "Audience",
+                "dynamic": false,
+                "info": "Target audience for the exchanged token",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "audience",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "\"\"\"\nLangflow Custom Component: Vault Credentials Tool (Combined)\nPerforms token exchange and gets dynamic database credentials from HashiCorp Vault\n\nThis tool combines:\n1. Token Exchange: Exchanges user access token for delegated agent token (RFC 8693)\n2. Vault Authentication: Uses agent token to authenticate with Vault\n3. Credential Retrieval: Gets dynamic database credentials from Vault\n\nArchitecture:\n- Frontend Client: User authentication (provides subject token)\n- Agent Client: Bot identity via client credentials (provides actor token)\n- Exchange Client: Token exchange service\n- Vault: Dynamic credential generation\n\"\"\"\n\nfrom typing import Any, Optional\nimport requests\nimport json\nimport jwt\n\nfrom lfx.custom import Component\nfrom lfx.io import MessageTextInput, StrInput, SecretStrInput, BoolInput, Output\nfrom lfx.schema import Data\n\n\nclass VaultCredentialsToolComponent(Component):\n    display_name = \"Vault Credentials Tool\"\n    description = \"STEP 1: Call this tool FIRST to obtain database credentials from Vault. Exchanges user token and retrieves dynamic credentials. Returns a credentials object with username, password, and database_role. You MUST call this before using query_database tool.\"\n    documentation = \"https://developer.hashicorp.com/vault/docs/auth/jwt\"\n    icon = \"Database\"\n    name = \"vault_credentials_tool\"\n    \n    inputs = [\n        # Passthrough input — required for Langflow agent tool connection\n        MessageTextInput(\n            name=\"input_value\",\n            display_name=\"Input\",\n            info=\"Passthrough input used when the component is connected to an agent as a tool.\",\n            tool_mode=True,\n        ),\n        # User Token Input\n        MessageTextInput(\n            name=\"user_jwt_token\",\n            display_name=\"User Access Token\",\n            info=\"Access token (JWT format) from Frontend Client for the authenticated user\",\n            advanced=True,\n        ),\n        \n        # Token Exchange Configuration\n        StrInput(\n            name=\"token_endpoint\",\n            display_name=\"Token Endpoint\",\n            info=\"OAuth token endpoint URL\",\n            value=\"https://automation.verify.ibm.com/oidc/endpoint/default/token\",\n            advanced=True,\n        ),\n        StrInput(\n            name=\"exchange_client_id\",\n            display_name=\"Exchange Client ID\",\n            info=\"Client ID for the Token Exchange Client\",\n            value=\"\",\n            advanced=True,\n        ),\n        SecretStrInput(\n            name=\"exchange_client_secret\",\n            display_name=\"Exchange Client Secret\",\n            info=\"Client secret for the Token Exchange Client\",\n            value=\"\",\n            advanced=True,\n        ),\n        StrInput(\n            name=\"agent_client_id\",\n            display_name=\"Agent Client ID\",\n            info=\"Client ID for the Agent Bot (provides actor token)\",\n            value=\"\",\n            advanced=True,\n        ),\n        SecretStrInput(\n            name=\"agent_client_secret\",\n            display_name=\"Agent Client Secret\",\n            info=\"Client secret for the Agent Bot\",\n            value=\"\",\n            advanced=True,\n        ),\n        StrInput(\n            name=\"audience\",\n            display_name=\"Audience\",\n            info=\"Target audience for the exchanged token\",\n            value=\"vault\",\n            advanced=True,\n        ),\n        StrInput(\n            name=\"scope\",\n            display_name=\"Scope\",\n            info=\"Requested scopes for the exchanged token\",\n            value=\"openid profile email groups\",\n            advanced=True,\n        ),\n        BoolInput(\n            name=\"use_delegation\",\n            display_name=\"Use Delegation (RFC 8693)\",\n            info=\"Enable delegation semantics with 'act' claim\",\n            value=True,\n            advanced=True,\n        ),\n        \n        # Vault Configuration\n        StrInput(\n            name=\"vault_addr\",\n            display_name=\"Vault Address\",\n            info=\"HashiCorp Vault server address\",\n            value=\"http://vault:8200\",\n            advanced=True,\n        ),\n        StrInput(\n            name=\"jwt_auth_path\",\n            display_name=\"JWT Auth Path\",\n            info=\"Vault JWT authentication path\",\n            value=\"auth/jwt/login\",\n            advanced=True,\n        ),\n        StrInput(\n            name=\"jwt_role\",\n            display_name=\"JWT Role\",\n            info=\"Vault JWT role name for agent authentication\",\n            value=\"agent-role\",\n            advanced=True,\n        ),\n    ]\n    \n    outputs = [\n        Output(\n            display_name=\"Database Credentials\",\n            name=\"credentials\",\n            method=\"get_credentials\",\n        ),\n    ]\n    \n    def get_credentials(self) -> Data:\n        \"\"\"\n        Main method: Exchange token and get database credentials\n        \n        Flow:\n        1. Validate user access token (subject)\n        2. Obtain agent access token (actor) via client credentials\n        3. Exchange tokens to get delegated token\n        4. Authenticate with Vault using delegated token\n        5. Request and return database credentials\n        \n        Returns:\n            Data object with database credentials or error information\n        \"\"\"\n        try:\n            # ============================================================\n            # STEP 1: Token Exchange\n            # ============================================================\n            self.log(\"=\" * 60)\n            self.log(\"STEP 1: TOKEN EXCHANGE\")\n            self.log(\"=\" * 60)\n            \n            # Extract and validate user access token\n            user_jwt = self._extract_token(self.user_jwt_token)\n            \n            if not user_jwt:\n                error_msg = \"User access token is required\"\n                self.log(f\"❌ {error_msg}\")\n                self.status = \"❌ Missing user token\"\n                return Data(data={\"error\": error_msg, \"status\": \"failed\"})\n            \n            if not self._is_valid_jwt_format(user_jwt):\n                error_msg = f\"Invalid JWT format. Token has {len(user_jwt.split('.'))} parts (expected 3)\"\n                self.log(f\"❌ {error_msg}\")\n                self.status = \"❌ Invalid token format\"\n                return Data(data={\"error\": error_msg, \"status\": \"failed\"})\n            \n            # Decode user token to inspect claims\n            try:\n                user_claims = jwt.decode(user_jwt, options={\"verify_signature\": False})\n                user_email = user_claims.get('email', 'unknown')\n                user_groups = user_claims.get('groupIds', [])\n                self.log(f\"📧 User: {user_email}\")\n                self.log(f\"👥 Groups: {user_groups}\")\n            except Exception as e:\n                self.log(f\"⚠️  Could not decode user token: {e}\")\n                user_email = \"unknown\"\n                user_groups = []\n            \n            # Get agent token via client credentials (if delegation enabled)\n            actor_token = None\n            if self.use_delegation:\n                self.log(\"🤖 Obtaining agent token via client credentials...\")\n                actor_token = self._get_agent_token()\n                \n                if not actor_token:\n                    error_msg = \"Failed to obtain agent token via client credentials\"\n                    self.log(f\"❌ {error_msg}\")\n                    self.status = \"❌ Agent auth failed\"\n                    return Data(data={\"error\": error_msg, \"status\": \"failed\"})\n                \n                self.log(\"✓ Agent token obtained\")\n            \n            # Perform token exchange\n            self.log(f\"🔄 Initiating token exchange for audience: {self.audience}\")\n            \n            token_exchange_data = {\n                'grant_type': 'urn:ietf:params:oauth:grant-type:token-exchange',\n                'subject_token': user_jwt,\n                'subject_token_type': 'urn:ietf:params:oauth:token-type:access_token',\n                'requested_token_type': 'urn:ietf:params:oauth:token-type:access_token',\n                'client_id': self.exchange_client_id,\n                'client_secret': self.exchange_client_secret,\n                'audience': self.audience,\n                'scope': self.scope\n            }\n            \n            # Add actor token for delegation semantics\n            if actor_token:\n                token_exchange_data['actor_token'] = actor_token\n                token_exchange_data['actor_token_type'] = 'urn:ietf:params:oauth:token-type:access_token'\n                self.log(\"🎭 Delegation mode: RFC 8693 with 'act' claim\")\n            \n            response = requests.post(\n                self.token_endpoint,\n                data=token_exchange_data,\n                headers={'Content-Type': 'application/x-www-form-urlencoded'},\n                timeout=30\n            )\n            \n            if response.status_code != 200:\n                error_msg = f\"Token exchange failed: {response.status_code} - {response.text}\"\n                self.log(f\"❌ {error_msg}\")\n                self.status = \"❌ Exchange failed\"\n                return Data(data={\"error\": error_msg, \"status\": \"failed\"})\n            \n            # Parse exchange response\n            exchange_result = response.json()\n            agent_token = exchange_result.get('access_token')\n            \n            if not agent_token:\n                error_msg = \"No access token in exchange response\"\n                self.log(f\"❌ {error_msg}\")\n                self.status = \"❌ Invalid response\"\n                return Data(data={\"error\": error_msg, \"status\": \"failed\"})\n            \n            # Verify agent token claims\n            try:\n                agent_claims = jwt.decode(agent_token, options={\"verify_signature\": False})\n                agent_audience = agent_claims.get('aud', 'unknown')\n                agent_subject = agent_claims.get('sub', 'unknown')\n                \n                if 'act' in agent_claims:\n                    actor_info = agent_claims['act']\n                    self.log(f\"🎭 Delegation detected - Actor: {actor_info.get('sub', 'unknown')}\")\n                \n                self.log(f\"✓ Agent token obtained - Audience: {agent_audience}, Subject: {agent_subject}\")\n            except Exception as e:\n                self.log(f\"⚠️  Could not decode agent token: {e}\")\n            \n            # ============================================================\n            # STEP 2: Vault Authentication\n            # ============================================================\n            self.log(\"\")\n            self.log(\"=\" * 60)\n            self.log(\"STEP 2: VAULT AUTHENTICATION\")\n            self.log(\"=\" * 60)\n            \n            self.log(f\"🔐 Authenticating with Vault using agent JWT for role: {self.jwt_role}\")\n            \n            auth_url = f\"{self.vault_addr}/v1/{self.jwt_auth_path}\"\n            auth_payload = {\n                \"role\": self.jwt_role,\n                \"jwt\": agent_token\n            }\n            \n            auth_response = requests.post(\n                auth_url,\n                json=auth_payload,\n                timeout=10\n            )\n            \n            if auth_response.status_code != 200:\n                error_msg = f\"Vault authentication failed: {auth_response.text}\"\n                self.log(f\"❌ {error_msg}\")\n                self.status = \"❌ Vault auth failed\"\n                return Data(data={\"error\": error_msg, \"status\": \"failed\"})\n            \n            vault_token = auth_response.json()[\"auth\"][\"client_token\"]\n            self.log(\"✓ Successfully authenticated with Vault\")\n            \n            # ============================================================\n            # STEP 3: Discover Database Role via Vault Capabilities\n            # ============================================================\n            self.log(\"\")\n            self.log(\"=\" * 60)\n            self.log(\"STEP 3: ROLE DISCOVERY\")\n            self.log(\"=\" * 60)\n            \n            # Check which database credential paths this token can access.\n            # The role is determined by the user's Vault identity (group membership),\n            # not by the query type. Vault enforces the actual access boundary.\n            headers = {\"X-Vault-Token\": vault_token}\n            cap_response = requests.post(\n                f\"{self.vault_addr}/v1/sys/capabilities-self\",\n                headers=headers,\n                json={\"paths\": [\"database/creds/hr-admin-reader\", \"database/creds/hr-basic-reader\"]},\n                timeout=10\n            )\n            \n            database_role = None\n            if cap_response.status_code == 200:\n                caps = cap_response.json()\n                admin_caps = caps.get(\"database/creds/hr-admin-reader\", [\"deny\"])\n                basic_caps = caps.get(\"database/creds/hr-basic-reader\", [\"deny\"])\n                self.log(f\"  hr-admin-reader capabilities : {admin_caps}\")\n                self.log(f\"  hr-basic-reader capabilities : {basic_caps}\")\n                \n                # Prefer hr-admin-reader if accessible; fall back to hr-basic-reader\n                if \"read\" in admin_caps:\n                    database_role = \"hr-admin-reader\"\n                    self.log(\"✓ Role resolved: hr-admin-reader (admin access)\")\n                elif \"read\" in basic_caps:\n                    database_role = \"hr-basic-reader\"\n                    self.log(\"✓ Role resolved: hr-basic-reader (basic access)\")\n                else:\n                    error_msg = \"Access denied: user does not have permission to access any database role\"\n                    self.log(f\"❌ {error_msg}\")\n                    self.status = \"❌ Access denied\"\n                    return Data(data={\"error\": error_msg, \"status\": \"failed\"})\n            else:\n                # Capabilities check failed — fall back to hr-basic-reader\n                self.log(f\"⚠️  Could not check capabilities ({cap_response.status_code}), defaulting to hr-basic-reader\")\n                database_role = \"hr-basic-reader\"\n            \n            # ============================================================\n            # STEP 4: Get Database Credentials\n            # ============================================================\n            self.log(\"\")\n            self.log(\"=\" * 60)\n            self.log(\"STEP 4: DATABASE CREDENTIALS\")\n            self.log(\"=\" * 60)\n            \n            self.log(f\"📊 Requesting credentials for database role: {database_role}\")\n            creds_url = f\"{self.vault_addr}/v1/database/creds/{database_role}\"\n            \n            creds_response = requests.get(\n                creds_url,\n                headers=headers,\n                timeout=10\n            )\n            \n            if creds_response.status_code != 200:\n                error_msg = f\"Failed to get credentials: {creds_response.text}\"\n                self.log(f\"❌ {error_msg}\")\n                self.status = \"❌ Credential request failed\"\n                return Data(data={\"error\": error_msg, \"status\": \"failed\"})\n            \n            creds_data = creds_response.json()[\"data\"]\n            \n            # ============================================================\n            # STEP 5: Return Credentials\n            # ============================================================\n            result = {\n                \"status\": \"success\",\n                \"username\": creds_data[\"username\"],\n                \"password\": creds_data[\"password\"],\n                \"lease_duration\": creds_data.get(\"lease_duration\", 3600),\n                \"database_role\": database_role,\n                \"user_email\": user_email,\n                \"user_groups\": user_groups\n            }\n            \n            self.log(\"\")\n            self.log(\"=\" * 60)\n            self.log(\"✓ SUCCESS\")\n            self.log(\"=\" * 60)\n            self.log(f\"✓ Database credentials obtained\")\n            self.log(f\"  Username: {result['username']}\")\n            self.log(f\"  Role    : {database_role}\")\n            self.log(f\"  TTL     : {result['lease_duration']}s\")\n            self.log(f\"  User    : {user_email}\")\n            self.log(f\"  Groups  : {user_groups}\")\n            \n            self.status = f\"✓ Credentials for {database_role}\"\n            \n            return Data(data=result)\n            \n        except requests.exceptions.RequestException as e:\n            error_msg = f\"Network error: {str(e)}\"\n            self.log(f\"❌ {error_msg}\")\n            self.status = \"❌ Network error\"\n            return Data(data={\"error\": error_msg, \"status\": \"failed\"})\n        except Exception as e:\n            error_msg = f\"Unexpected error: {str(e)}\"\n            self.log(f\"❌ {error_msg}\")\n            self.status = \"❌ Unexpected error\"\n            return Data(data={\"error\": error_msg, \"status\": \"failed\"})\n    \n    def _is_valid_jwt_format(self, token: str) -> bool:\n        \"\"\"Check if token has valid JWT format (three base64 parts separated by dots)\"\"\"\n        parts = token.split('.')\n        return len(parts) == 3\n    \n    def _extract_token(self, token_input: Any) -> str:\n        \"\"\"Extract token string from various input types\"\"\"\n        if not token_input:\n            return \"\"\n        \n        if hasattr(token_input, 'text'):\n            return token_input.text.strip()\n        elif hasattr(token_input, 'data'):\n            return str(token_input.data).strip()\n        elif isinstance(token_input, dict):\n            return token_input.get('token', token_input.get('access_token', str(token_input))).strip()\n        else:\n            token_str = str(token_input).strip()\n            return \"\" if token_str == 'None' else token_str\n    \n    def _get_agent_token(self) -> Optional[str]:\n        \"\"\"\n        Obtain agent access token via client credentials grant\n        \n        This implements the Agent Client in the 3-client architecture.\n        The agent token represents the bot/agent identity and is used as the actor\n        token in RFC 8693 token exchange.\n        \n        Returns:\n            Agent access token (JWT format) or None if failed\n        \"\"\"\n        try:\n            self.log(f\"🔐 Authenticating agent client: {self.agent_client_id[:20]}...\")\n            \n            # Client credentials grant\n            data = {\n                'grant_type': 'client_credentials',\n                'client_id': self.agent_client_id,\n                'client_secret': self.agent_client_secret,\n                'scope': 'agent.act'  # Custom scope for agent acting capability\n            }\n            \n            response = requests.post(\n                self.token_endpoint,\n                data=data,\n                headers={'Content-Type': 'application/x-www-form-urlencoded'},\n                timeout=30\n            )\n            \n            if response.status_code != 200:\n                self.log(f\"❌ Agent auth failed: {response.status_code} - {response.text}\")\n                return None\n            \n            result = response.json()\n            agent_token = result.get('access_token')\n            \n            if not agent_token:\n                self.log(\"❌ No access token in agent auth response\")\n                return None\n            \n            # Verify it's a JWT\n            if not self._is_valid_jwt_format(agent_token):\n                self.log(\"❌ Agent token is not in JWT format\")\n                return None\n            \n            # Decode to verify claims\n            try:\n                agent_claims = jwt.decode(agent_token, options={\"verify_signature\": False})\n                agent_client_id = agent_claims.get('client_id', 'unknown')\n                self.log(f\"✓ Agent authenticated: {agent_client_id}\")\n            except Exception as e:\n                self.log(f\"⚠️  Could not decode agent token: {e}\")\n            \n            return agent_token\n            \n        except requests.exceptions.RequestException as e:\n            self.log(f\"❌ Network error during agent authentication: {e}\")\n            return None\n        except Exception as e:\n            self.log(f\"❌ Unexpected error during agent authentication: {e}\")\n            return None\n\n# Made with Bob"
+              },
+              "exchange_client_id": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "Exchange Client ID",
+                "dynamic": false,
+                "info": "Client ID for the Token Exchange Client",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "exchange_client_id",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": "a7ffd6ef-50a6-4f08-91d5-c08b37424f2f"
+              },
+              "exchange_client_secret": {
+                "_input_type": "SecretStrInput",
+                "advanced": true,
+                "display_name": "Exchange Client Secret",
+                "dynamic": false,
+                "info": "Client secret for the Token Exchange Client",
+                "input_types": [],
+                "load_from_db": false,
+                "name": "exchange_client_secret",
+                "override_skip": false,
+                "password": true,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              },
+              "input_value": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Input",
+                "dynamic": false,
+                "info": "Passthrough input used when the component is connected to an agent as a tool.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "input_value",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              },
+              "jwt_auth_path": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "JWT Auth Path",
+                "dynamic": false,
+                "info": "Vault JWT authentication path",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "jwt_auth_path",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": "auth/jwt/login"
+              },
+              "jwt_role": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "JWT Role",
+                "dynamic": false,
+                "info": "Vault JWT role name for agent authentication",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "jwt_role",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": "agent-role"
+              },
+              "scope": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "Scope",
+                "dynamic": false,
+                "info": "Requested scopes for the exchanged token",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "scope",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": "openid profile email groups"
+              },
+              "token_endpoint": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "Token Endpoint",
+                "dynamic": false,
+                "info": "OAuth token endpoint URL",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "token_endpoint",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": "https://automation.verify.ibm.com/oidc/endpoint/default/token"
+              },
+              "tools_metadata": {
+                "_input_type": "ToolsInput",
+                "advanced": false,
+                "display_name": "Actions",
+                "dynamic": false,
+                "info": "Modify tool names and descriptions to help agents understand when to use each tool.",
+                "is_list": true,
+                "list_add_label": "Add More",
+                "name": "tools_metadata",
+                "override_skip": false,
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "tools",
+                "value": [
+                  {
+                    "args": {
+                      "input_value": {
+                        "default": "",
+                        "description": "Passthrough input used when the component is connected to an agent as a tool.",
+                        "title": "Input Value",
+                        "type": "string"
+                      }
+                    },
+                    "description": "STEP 1: Call this tool FIRST to obtain database credentials from Vault. Exchanges user token and retrieves dynamic credentials. Returns a credentials object with username, password, and database_role. You MUST call this before using query_database tool.",
+                    "display_description": "STEP 1: Call this tool FIRST to obtain database credentials from Vault. Exchanges user token and retrieves dynamic credentials. Returns a credentials object with username, password, and database_role. You MUST call this before using query_database tool.",
+                    "display_name": "get_credentials",
+                    "name": "get_credentials",
+                    "readonly": false,
+                    "status": true,
+                    "tags": [
+                      "get_credentials"
+                    ]
+                  }
+                ]
+              },
+              "use_delegation": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Use Delegation (RFC 8693)",
+                "dynamic": false,
+                "info": "Enable delegation semantics with 'act' claim",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "use_delegation",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "bool",
+                "value": true
+              },
+              "user_jwt_token": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "User Access Token",
+                "dynamic": false,
+                "info": "Access token (JWT format) from Frontend Client for the authenticated user",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "user_jwt_token",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              },
+              "vault_addr": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "Vault Address",
+                "dynamic": false,
+                "info": "HashiCorp Vault server address",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "vault_addr",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": "http://vault:8200"
+              }
+            },
+            "tool_mode": true
+          },
+          "showNode": true,
+          "type": "vault_credentials_tool"
+        },
+        "dragging": false,
+        "id": "vault_credentials_tool-KCi9s",
+        "measured": {
+          "height": 282,
+          "width": 320
+        },
+        "position": {
+          "x": 682.2284849684559,
+          "y": -1079.3700620106542
+        },
+        "selected": true,
+        "type": "genericNode"
+      }
+    ],
+    "viewport": {
+      "x": -303.58447360107584,
+      "y": 1018.6753485491852,
+      "zoom": 0.8832590354665968
+    }
+  },
+  "description": "Secure HR Agent with access to postgres database",
+  "endpoint_name": null,
+  "id": "6158c23c-7d05-49db-ba6e-0b3304f7df2a",
+  "is_component": false,
+  "last_tested_version": "1.7.3",
+  "name": "AskHR-Agent",
+  "tags": []
+}

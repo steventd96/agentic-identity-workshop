@@ -1,0 +1,379 @@
+/* Carbon Design System Styling */
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+}
+
+.main-content {
+  margin-top: 4rem;
+  min-height: calc(100vh - 4rem);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Header User Profile */
+.user-profile-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 1rem;
+  height: 4rem;
+  margin-right: auto;
+  order: -1;
+}
+
+.user-name-display {
+  font-size: 0.875rem;
+  line-height: 4rem;
+  color: #f4f4f4;
+}
+
+/* Loading State */
+.loading-container {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.loading-spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #e0e0e0;
+  border-top-color: #0f62fe;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loading-text {
+  font-size: 1rem;
+  color: #525252;
+  margin: 0;
+}
+
+/* Login Grid */
+.login-grid {
+  padding: 3rem 0;
+  flex: 1;
+  align-content: center;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: #161616;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #525252;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Error Tile */
+.error-tile {
+  background-color: #fff1f1;
+  border-left: 4px solid #da1e28;
+}
+
+.error-text {
+  color: #750e13;
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+/* Login Tile */
+.login-tile {
+  padding: 2rem;
+}
+
+.tile-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #161616;
+  margin: 0 0 0.5rem 0;
+}
+
+.tile-description {
+  font-size: 0.875rem;
+  color: #525252;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Features Grid */
+.features-grid {
+  margin-top: 1rem;
+}
+
+.feature-tile {
+  padding: 1.5rem;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.feature-icon {
+  color: #0f62fe;
+}
+
+.feature-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #161616;
+  margin: 0;
+}
+
+.feature-description {
+  font-size: 0.875rem;
+  color: #525252;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Authenticated Grid */
+.authenticated-grid {
+  padding: 2rem 0;
+  flex: 1;
+}
+
+/* Welcome Tile */
+.welcome-tile {
+  padding: 2rem;
+  background: linear-gradient(135deg, #0f62fe 0%, #0353e9 100%);
+  color: #ffffff;
+}
+
+.welcome-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.welcome-title {
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin: 0 0 0.5rem 0;
+  color: #ffffff;
+}
+
+.welcome-subtitle {
+  font-size: 0.875rem;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.user-role {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.welcome-icon {
+  color: rgba(255, 255, 255, 0.8);
+  flex-shrink: 0;
+}
+
+/* Chat Tile */
+.chat-tile {
+  padding: 2rem;
+}
+
+.chat-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #161616;
+  margin: 0;
+}
+
+.chat-description {
+  font-size: 0.875rem;
+  color: #525252;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Chat Widget Wrapper */
+.chat-widget-wrapper {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  min-height: 600px;
+}
+
+.chat-widget-container {
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+}
+
+.chat-widget-container langflow-chat {
+  width: 100%;
+  height: 100%;
+  display: block;
+  min-height: 600px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 2rem 0;
+  color: #525252;
+  font-size: 0.875rem;
+  border-top: 1px solid #e0e0e0;
+  background-color: #ffffff;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1056px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .welcome-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .welcome-icon {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 672px) {
+  .user-profile-container {
+    padding: 0 0.5rem;
+  }
+
+  .user-name-display {
+    display: none;
+  }
+
+  .hero-section {
+    padding: 1rem 0;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.875rem;
+  }
+
+  .login-tile {
+    padding: 1.5rem;
+  }
+
+  .feature-tile {
+    padding: 1rem;
+  }
+
+  .welcome-tile {
+    padding: 1.5rem;
+  }
+
+  .welcome-title {
+    font-size: 1.5rem;
+  }
+
+  .chat-tile {
+    padding: 1.5rem;
+  }
+
+  .chat-title {
+    font-size: 1.25rem;
+  }
+
+  .chat-widget-wrapper {
+    min-height: 500px;
+  }
+
+  .chat-widget-container {
+    min-height: 500px;
+  }
+
+  .chat-widget-container langflow-chat {
+    min-height: 500px;
+  }
+}
+
+/* Carbon Design System Component Overrides */
+.cds--header {
+  background-color: #161616;
+  border-bottom: 1px solid #393939;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.cds--header__global {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+}
+
+.cds--header__name {
+  color: #f4f4f4;
+  font-size: 1.125rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.cds--header__name:hover {
+  text-decoration: none;
+}
+
+.cds--header__name span {
+  text-decoration: none;
+}
+
+.cds--btn--primary {
+  background-color: #0062ff;
+  min-height: 3.5rem;
+  padding: 0 3rem;
+  font-size: 1.125rem;
+}
+
+.cds--btn--primary:hover {
+  background-color: #0050e6;
+}
+
+.cds--btn--primary:active {
+  background-color: #0043ce;
+}
+
+.cds--tile {
+  background-color: #ffffff;
+}
+
+/* Made with Bob */

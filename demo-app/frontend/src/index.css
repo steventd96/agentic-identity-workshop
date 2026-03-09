@@ -1,0 +1,31 @@
+/* Carbon Design System Base Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4;
+  color: #161616;
+}
+
+code {
+  font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Carbon Design System Theme */
+.cds-theme-zone-white {
+  background-color: #ffffff;
+}
+
+/* Made with Bob */

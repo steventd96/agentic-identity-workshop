@@ -1,0 +1,185 @@
+# Podman Compose Compatible
+# This file works with both docker-compose and podman-compose
+# Usage: podman-compose up -d
+version: '3.8'
+
+services:
+  # HashiCorp Vault
+  vault:
+    image: hashicorp/vault:latest
+    container_name: agentic-vault
+    ports:
+      - "8200:8200"
+    environment:
+      VAULT_DEV_ROOT_TOKEN_ID: "root"
+      VAULT_DEV_LISTEN_ADDRESS: "0.0.0.0:8200"
+      VAULT_ADDR: "http://0.0.0.0:8200"
+    cap_add:
+      - IPC_LOCK
+    volumes:
+      - ./infrastructure/vault/config:/vault/config
+      - ./infrastructure/vault/policies:/vault/policies
+      - vault-data:/vault/file
+      - vault-logs:/vault/logs
+    command: server -dev -dev-root-token-id="root"
+    networks:
+      - agentic-network
+    healthcheck:
+      test: ["CMD", "vault", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # PostgreSQL Database (for employee data)
+  postgres:
+    image: postgres:15-alpine
+    container_name: agentic-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: employee_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - ./infrastructure/database:/docker-entrypoint-initdb.d
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - agentic-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # PostgreSQL Database (for Langflow)
+  langflow-postgres:
+    image: postgres:15-alpine
+    container_name: langflow-postgres
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: ${LANGFLOW_POSTGRES_DB:-langflow}
+      POSTGRES_USER: ${LANGFLOW_POSTGRES_USER:-langflow}
+      POSTGRES_PASSWORD: ${LANGFLOW_POSTGRES_PASSWORD:-langflow}
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - langflow-postgres-data:/var/lib/postgresql/data
+    networks:
+      - agentic-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U langflow"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Langflow
+  langflow:
+    image: langflowai/langflow:latest
+    container_name: agentic-langflow
+    user: "0:0"  # Run as root to avoid permission issues
+    ports:
+      - "7860:7860"
+    environment:
+      - LANGFLOW_DATABASE_URL=postgresql://${LANGFLOW_POSTGRES_USER:-langflow}:${LANGFLOW_POSTGRES_PASSWORD:-langflow}@langflow-postgres:5432/${LANGFLOW_POSTGRES_DB:-langflow}
+      - LANGFLOW_CONFIG_DIR=/app/langflow
+      - LANGFLOW_AUTO_LOGIN=false
+      - LANGFLOW_SUPERUSER=${LANGFLOW_SUPERUSER:-admin}
+      - LANGFLOW_SUPERUSER_PASSWORD=${LANGFLOW_SUPERUSER_PASSWORD:-admin}
+      - LANGFLOW_COMPONENTS_PATH=/app/custom_components
+    volumes:
+      - langflow-data:/app/langflow
+      - ./agents/flows:/app/flows:rw
+      - ./demo-app/tools:/app/custom_components/custom_tools:ro
+    networks:
+      - agentic-network
+    depends_on:
+      langflow-postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:7860/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+
+  # AskHR Backend API (Flask)
+  askhr-backend:
+    build:
+      context: ./demo-app/backend
+      dockerfile: Dockerfile
+    container_name: agentic-askhr-backend
+    ports:
+      - "5001:5000"
+    environment:
+      - IBM_VERIFY_TENANT=${IBM_VERIFY_TENANT}
+      - IBM_VERIFY_FRONTEND_CLIENT_ID=${IBM_VERIFY_FRONTEND_CLIENT_ID}
+      - IBM_VERIFY_FRONTEND_CLIENT_SECRET=${IBM_VERIFY_FRONTEND_CLIENT_SECRET}
+      - IBM_VERIFY_OIDC_URL=${IBM_VERIFY_OIDC_URL}
+      - IBM_VERIFY_REDIRECT_URI=${IBM_VERIFY_REDIRECT_URI:-http://localhost:3000/callback}
+      - FLASK_SECRET_KEY=${FLASK_SECRET_KEY}
+      - FLASK_DEBUG=False
+      - PORT=5000
+    networks:
+      - agentic-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  # AskHR Frontend Application
+  askhr-frontend:
+    build:
+      context: ./demo-app/frontend
+      dockerfile: Dockerfile
+      args:
+        - REACT_APP_BACKEND_URL=http://localhost:5001
+        - REACT_APP_LANGFLOW_API_URL=http://localhost:7860
+        - REACT_APP_LANGFLOW_API_KEY=${REACT_APP_LANGFLOW_API_KEY}
+        - REACT_APP_LANGFLOW_HOST_URL=${REACT_APP_LANGFLOW_HOST_URL:-http://localhost:7860}
+        - REACT_APP_LANGFLOW_FLOW_ID=${REACT_APP_LANGFLOW_FLOW_ID}
+        - REACT_APP_LANGFLOW_COMPONENT_ID=${REACT_APP_LANGFLOW_COMPONENT_ID:-vault_credentials_tool-okuBC}
+    container_name: agentic-askhr-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - REACT_APP_BACKEND_URL=http://localhost:5001
+      - REACT_APP_LANGFLOW_API_URL=http://langflow:7860
+      - REACT_APP_LANGFLOW_API_KEY=${REACT_APP_LANGFLOW_API_KEY}
+      - REACT_APP_LANGFLOW_HOST_URL=${REACT_APP_LANGFLOW_HOST_URL:-http://localhost:7860}
+      - REACT_APP_LANGFLOW_FLOW_ID=${REACT_APP_LANGFLOW_FLOW_ID}
+      - REACT_APP_LANGFLOW_COMPONENT_ID=${REACT_APP_LANGFLOW_COMPONENT_ID:-vault_credentials_tool-okuBC}
+    networks:
+      - agentic-network
+    depends_on:
+      askhr-backend:
+        condition: service_healthy
+      langflow:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+volumes:
+  vault-data:
+    driver: local
+  vault-logs:
+    driver: local
+  postgres-data:
+    driver: local
+  langflow-postgres-data:
+    driver: local
+  langflow-data:
+    driver: local
+
+networks:
+  agentic-network:
+    driver: bridge
+
+# Made with Bob
